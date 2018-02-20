@@ -26,3 +26,16 @@ C:\Users\rc308750\Desktop\c#\OrganTrail\OrganTrail\obj\Debug\OrganTrail.gameMedi
 C:\Users\rc308750\Desktop\BECCA ORGANS\OrganTrail\bin\Debug\OrganTrail.exe.config
 C:\Users\rc308750\Desktop\BECCA ORGANS\OrganTrail\obj\Debug\OrganTrail.exe
 C:\Users\rc308750\Desktop\BECCA ORGANS\OrganTrail\obj\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.exe.config
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.exe
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.exe
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csprojResolveAssemblyReference.cache
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.gameEasy.resources
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.gameHard.resources
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.gameMedium.resources
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.MainMenu.resources
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.map.resources
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Properties.Resources.resources
+C:\Users\am312792\Desktop\CSharp\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csproj.GenerateResource.Cache
