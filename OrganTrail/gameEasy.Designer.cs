@@ -66,6 +66,7 @@
             this.gbEverything.Size = new System.Drawing.Size(703, 139);
             this.gbEverything.TabIndex = 0;
             this.gbEverything.TabStop = false;
+            this.gbEverything.Visible = false;
             // 
             // lblTraveled
             // 
@@ -74,7 +75,6 @@
             this.lblTraveled.Name = "lblTraveled";
             this.lblTraveled.Size = new System.Drawing.Size(108, 23);
             this.lblTraveled.TabIndex = 11;
-            this.lblTraveled.Text = "0 miles";
             // 
             // lblLandmark
             // 
@@ -83,7 +83,6 @@
             this.lblLandmark.Name = "lblLandmark";
             this.lblLandmark.Size = new System.Drawing.Size(108, 23);
             this.lblLandmark.TabIndex = 10;
-            this.lblLandmark.Text = "0 miles";
             // 
             // lblFood
             // 
@@ -92,7 +91,6 @@
             this.lblFood.Name = "lblFood";
             this.lblFood.Size = new System.Drawing.Size(122, 23);
             this.lblFood.TabIndex = 9;
-            this.lblFood.Text = "0 pounds";
             // 
             // lblHealth
             // 
@@ -109,7 +107,6 @@
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(80, 23);
             this.lblTime.TabIndex = 7;
-            this.lblTime.Text = "00:00";
             // 
             // label8
             // 
@@ -197,6 +194,7 @@
             this.lblEnter.TabIndex = 3;
             this.lblEnter.Text = "Press ENTER to size up the situation";
             this.lblEnter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEnter.Visible = false;
             // 
             // picCharacter
             // 
@@ -207,6 +205,7 @@
             this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCharacter.TabIndex = 4;
             this.picCharacter.TabStop = false;
+            this.picCharacter.Visible = false;
             // 
             // gameEasy
             // 
