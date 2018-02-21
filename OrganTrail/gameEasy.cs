@@ -15,20 +15,22 @@ namespace OrganTrail
         public gameEasy()
         {
             InitializeComponent();
-            int hours = 0;
-            int min = 00;
+
+            int time = 0;
             int food = 0;
             int miles = 0;
             int landmark = 0;
-            string health = "very poor";
+            int  ammo = 0;
+            string health = "";
 
-            hours = +1;
-            min = 00;
+            //int randomNumber;
+            //Random randNumber = new Random();
+            //randomNumber = randNumber.Next(1, 3);
           
 
             lblFood.Text = food + " pounds";
             lblLandmark.Text = landmark + " miles";
-            lblTime.Text = hours + ":" + min.ToString();
+            lblTime.Text = time + ":";
             lblHealth.Text = health;
             lblTraveled.Text = miles + " miles";
             
