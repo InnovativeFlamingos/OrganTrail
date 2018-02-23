@@ -43,6 +43,20 @@
             this.lblSpace = new System.Windows.Forms.Label();
             this.lblEnter = new System.Windows.Forms.Label();
             this.picCharacter = new System.Windows.Forms.PictureBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblNameLeader = new System.Windows.Forms.Label();
+            this.btnContinue = new System.Windows.Forms.Button();
+            this.lblFourNames = new System.Windows.Forms.Label();
+            this.txtName1 = new System.Windows.Forms.TextBox();
+            this.txtName2 = new System.Windows.Forms.TextBox();
+            this.txtName3 = new System.Windows.Forms.TextBox();
+            this.txtName4 = new System.Windows.Forms.TextBox();
+            this.btnContinue2 = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lblShowName = new System.Windows.Forms.Label();
             this.gbEverything.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +64,7 @@
             // gbEverything
             // 
             this.gbEverything.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbEverything.Controls.Add(this.lblShowName);
             this.gbEverything.Controls.Add(this.lblTraveled);
             this.gbEverything.Controls.Add(this.lblLandmark);
             this.gbEverything.Controls.Add(this.lblFood);
@@ -207,12 +222,192 @@
             this.picCharacter.TabStop = false;
             this.picCharacter.Visible = false;
             // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtName.Location = new System.Drawing.Point(227, 76);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(202, 16);
+            this.txtName.TabIndex = 5;
+            // 
+            // lblNameLeader
+            // 
+            this.lblNameLeader.AutoSize = true;
+            this.lblNameLeader.Font = new System.Drawing.Font("OCR A Extended", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameLeader.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblNameLeader.Location = new System.Drawing.Point(99, 35);
+            this.lblNameLeader.Name = "lblNameLeader";
+            this.lblNameLeader.Size = new System.Drawing.Size(460, 25);
+            this.lblNameLeader.TabIndex = 12;
+            this.lblNameLeader.Text = "What is the team leader\'s name? ";
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.BackColor = System.Drawing.Color.Black;
+            this.btnContinue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContinue.Font = new System.Drawing.Font("OCR A Extended", 12F);
+            this.btnContinue.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnContinue.Location = new System.Drawing.Point(202, 155);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(304, 36);
+            this.btnContinue.TabIndex = 13;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = false;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // lblFourNames
+            // 
+            this.lblFourNames.AutoSize = true;
+            this.lblFourNames.Font = new System.Drawing.Font("OCR A Extended", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFourNames.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblFourNames.Location = new System.Drawing.Point(71, 10);
+            this.lblFourNames.Name = "lblFourNames";
+            this.lblFourNames.Size = new System.Drawing.Size(488, 50);
+            this.lblFourNames.TabIndex = 14;
+            this.lblFourNames.Text = "What are the first names of the\r\n four other members in your party?";
+            this.lblFourNames.Visible = false;
+            // 
+            // txtName1
+            // 
+            this.txtName1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txtName1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName1.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtName1.Location = new System.Drawing.Point(227, 70);
+            this.txtName1.Name = "txtName1";
+            this.txtName1.Size = new System.Drawing.Size(202, 16);
+            this.txtName1.TabIndex = 15;
+            this.txtName1.Visible = false;
+            // 
+            // txtName2
+            // 
+            this.txtName2.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txtName2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtName2.Location = new System.Drawing.Point(227, 98);
+            this.txtName2.Name = "txtName2";
+            this.txtName2.Size = new System.Drawing.Size(202, 16);
+            this.txtName2.TabIndex = 16;
+            this.txtName2.Visible = false;
+            // 
+            // txtName3
+            // 
+            this.txtName3.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txtName3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName3.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName3.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtName3.Location = new System.Drawing.Point(227, 126);
+            this.txtName3.Name = "txtName3";
+            this.txtName3.Size = new System.Drawing.Size(202, 16);
+            this.txtName3.TabIndex = 17;
+            this.txtName3.Visible = false;
+            // 
+            // txtName4
+            // 
+            this.txtName4.BackColor = System.Drawing.SystemColors.MenuText;
+            this.txtName4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName4.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName4.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtName4.Location = new System.Drawing.Point(227, 155);
+            this.txtName4.Name = "txtName4";
+            this.txtName4.Size = new System.Drawing.Size(202, 16);
+            this.txtName4.TabIndex = 18;
+            this.txtName4.Visible = false;
+            // 
+            // btnContinue2
+            // 
+            this.btnContinue2.BackColor = System.Drawing.Color.Black;
+            this.btnContinue2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContinue2.Font = new System.Drawing.Font("OCR A Extended", 12F);
+            this.btnContinue2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnContinue2.Location = new System.Drawing.Point(176, 177);
+            this.btnContinue2.Name = "btnContinue2";
+            this.btnContinue2.Size = new System.Drawing.Size(304, 36);
+            this.btnContinue2.TabIndex = 19;
+            this.btnContinue2.Text = "Continue";
+            this.btnContinue2.UseVisualStyleBackColor = false;
+            this.btnContinue2.Visible = false;
+            this.btnContinue2.Click += new System.EventHandler(this.btnContinue2_Click);
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl1.Location = new System.Drawing.Point(199, 68);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(26, 17);
+            this.lbl1.TabIndex = 19;
+            this.lbl1.Text = "1.";
+            this.lbl1.Visible = false;
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl2.Location = new System.Drawing.Point(199, 93);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(26, 17);
+            this.lbl2.TabIndex = 20;
+            this.lbl2.Text = "2.";
+            this.lbl2.Visible = false;
+            // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl3.Location = new System.Drawing.Point(199, 125);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(26, 17);
+            this.lbl3.TabIndex = 21;
+            this.lbl3.Text = "3.";
+            this.lbl3.Visible = false;
+            // 
+            // lbl4
+            // 
+            this.lbl4.AutoSize = true;
+            this.lbl4.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl4.Location = new System.Drawing.Point(199, 153);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(26, 17);
+            this.lbl4.TabIndex = 22;
+            this.lbl4.Text = "4.";
+            this.lbl4.Visible = false;
+            // 
+            // lblShowName
+            // 
+            this.lblShowName.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.lblShowName.Location = new System.Drawing.Point(508, 37);
+            this.lblShowName.Name = "lblShowName";
+            this.lblShowName.Size = new System.Drawing.Size(155, 23);
+            this.lblShowName.TabIndex = 12;
+            // 
             // gameEasy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(709, 377);
+            this.Controls.Add(this.btnContinue2);
+            this.Controls.Add(this.lbl4);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.txtName4);
+            this.Controls.Add(this.txtName3);
+            this.Controls.Add(this.txtName2);
+            this.Controls.Add(this.txtName1);
+            this.Controls.Add(this.lblFourNames);
+            this.Controls.Add(this.btnContinue);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblNameLeader);
             this.Controls.Add(this.picCharacter);
             this.Controls.Add(this.lblEnter);
             this.Controls.Add(this.lblSpace);
@@ -223,6 +418,7 @@
             this.gbEverything.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -243,5 +439,19 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox picCharacter;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblNameLeader;
+        private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Label lblFourNames;
+        private System.Windows.Forms.TextBox txtName1;
+        private System.Windows.Forms.TextBox txtName2;
+        private System.Windows.Forms.Button btnContinue2;
+        private System.Windows.Forms.TextBox txtName3;
+        private System.Windows.Forms.TextBox txtName4;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lblShowName;
     }
 }
