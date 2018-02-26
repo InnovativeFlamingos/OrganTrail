@@ -22,14 +22,8 @@ namespace OrganTrail
             int landmark = 0;
             int  ammo = 0;
             string health = "";
-            string leader;
-            string name1 = txtName1.Text;
-            string name2 = txtName2.Text;
-            string name3 = txtName3.Text;
-            string name4 = txtName4.Text;
+            int counter = 0;
 
-            leader = txtName.Text;
-            
 
             //int randomNumber;
             //Random randNumber = new Random();
@@ -41,7 +35,10 @@ namespace OrganTrail
             lblHealth.Text = health;
             lblTraveled.Text = miles + " miles";
 
-            lblShowName.Text = txtName1.Text;
+           
+
+
+
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -77,7 +74,36 @@ namespace OrganTrail
             btnContinue2.Visible = false;
             gbEverything.Visible = true;
             picCharacter.Visible = true;
+            lblEnter.Visible = true;
+
+            //Form shopForm = new Shop();
+            //shopForm.Show();
+
+            string leader = txtName.Text;
+            string name1 = txtName1.Text;
+            string name2 = txtName2.Text;
+            string name3 = txtName3.Text;
+            string name4 = txtName4.Text;
         }
+
+        private void KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+       
+        //private void lblEnter_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Space)
+        //    {
+        //        lblSpace.Visible = true;
+        //    }
+        //    else if (e.KeyCode == Keys.Enter)
+        //    {
+        //        picCharacter.Visible = false;
+        //    }
+        //}
+
 
     }
 }
