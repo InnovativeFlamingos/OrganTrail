@@ -51,3 +51,4 @@ C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.MainMenu.re
 C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.map.resources
 C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.Properties.Resources.resources
 C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.csproj.GenerateResource.Cache
+C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.Shop.resources

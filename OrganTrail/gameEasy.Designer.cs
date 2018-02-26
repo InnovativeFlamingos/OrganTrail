@@ -42,7 +42,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblSpace = new System.Windows.Forms.Label();
             this.lblEnter = new System.Windows.Forms.Label();
-            this.picCharacter = new System.Windows.Forms.PictureBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblNameLeader = new System.Windows.Forms.Label();
             this.btnContinue = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
-            this.lblShowName = new System.Windows.Forms.Label();
+            this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbEverything.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +63,6 @@
             // gbEverything
             // 
             this.gbEverything.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbEverything.Controls.Add(this.lblShowName);
             this.gbEverything.Controls.Add(this.lblTraveled);
             this.gbEverything.Controls.Add(this.lblLandmark);
             this.gbEverything.Controls.Add(this.lblFood);
@@ -211,17 +209,6 @@
             this.lblEnter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEnter.Visible = false;
             // 
-            // picCharacter
-            // 
-            this.picCharacter.Image = global::OrganTrail.Properties.Resources.Sub_clone1;
-            this.picCharacter.Location = new System.Drawing.Point(527, 44);
-            this.picCharacter.Name = "picCharacter";
-            this.picCharacter.Size = new System.Drawing.Size(149, 133);
-            this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCharacter.TabIndex = 4;
-            this.picCharacter.TabStop = false;
-            this.picCharacter.Visible = false;
-            // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.SystemColors.MenuText;
@@ -324,7 +311,7 @@
             this.btnContinue2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContinue2.Font = new System.Drawing.Font("OCR A Extended", 12F);
             this.btnContinue2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnContinue2.Location = new System.Drawing.Point(176, 177);
+            this.btnContinue2.Location = new System.Drawing.Point(176, 183);
             this.btnContinue2.Name = "btnContinue2";
             this.btnContinue2.Size = new System.Drawing.Size(304, 36);
             this.btnContinue2.TabIndex = 19;
@@ -381,13 +368,16 @@
             this.lbl4.Text = "4.";
             this.lbl4.Visible = false;
             // 
-            // lblShowName
+            // picCharacter
             // 
-            this.lblShowName.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblShowName.Location = new System.Drawing.Point(508, 37);
-            this.lblShowName.Name = "lblShowName";
-            this.lblShowName.Size = new System.Drawing.Size(155, 23);
-            this.lblShowName.TabIndex = 12;
+            this.picCharacter.Image = global::OrganTrail.Properties.Resources.Sub_clone1;
+            this.picCharacter.Location = new System.Drawing.Point(527, 44);
+            this.picCharacter.Name = "picCharacter";
+            this.picCharacter.Size = new System.Drawing.Size(149, 133);
+            this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCharacter.TabIndex = 4;
+            this.picCharacter.TabStop = false;
+            this.picCharacter.Visible = false;
             // 
             // gameEasy
             // 
@@ -414,6 +404,7 @@
             this.Controls.Add(this.gbEverything);
             this.Name = "gameEasy";
             this.Text = "gameEasy";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.gbEverything.ResumeLayout(false);
             this.gbEverything.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
@@ -452,6 +443,5 @@
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label lbl4;
-        private System.Windows.Forms.Label lblShowName;
     }
 }
