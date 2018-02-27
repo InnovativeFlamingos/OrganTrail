@@ -35,9 +35,6 @@ namespace OrganTrail
             lblHealth.Text = health;
             lblTraveled.Text = miles + " miles";
 
-           
-
-
 
         }
 
@@ -76,8 +73,7 @@ namespace OrganTrail
             picCharacter.Visible = true;
             lblEnter.Visible = true;
 
-            //Form shopForm = new Shop();
-            //shopForm.Show();
+           
 
             string leader = txtName.Text;
             string name1 = txtName1.Text;
@@ -86,24 +82,30 @@ namespace OrganTrail
             string name4 = txtName4.Text;
         }
 
-        private void KeyPress(object sender, KeyPressEventArgs e)
+    
+        private void KeyisPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = true;
+            }
+            else if (e.KeyChar == (char)Keys.D1)
+            {
+                gbEverything.Visible = true;
+                picCharacter.Visible = true;
+                lblEnter.Visible = true;
+                gbOptions.Visible = false;
+            }
+            else if (e.KeyChar == (char)Keys.D2)
+            {
+                Form mapForm = new map();
+                mapForm.Show();
+            }
 
         }
-
-       
-        //private void lblEnter_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
-        //{
-        //    if (e.KeyCode == Keys.Space)
-        //    {
-        //        lblSpace.Visible = true;
-        //    }
-        //    else if (e.KeyCode == Keys.Enter)
-        //    {
-        //        picCharacter.Visible = false;
-        //    }
-        //}
-
 
     }
 }
