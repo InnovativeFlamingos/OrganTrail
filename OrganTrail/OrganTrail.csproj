@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bullet.cs" />
     <Compile Include="gameEasy.cs">
       <SubType>Form</SubType>
     </Compile>
