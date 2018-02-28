@@ -25,6 +25,7 @@ namespace OrganTrail
             int counter = 0;
 
 
+
             //int randomNumber;
             //Random randNumber = new Random();
             //randomNumber = randNumber.Next(1, 3);
@@ -34,6 +35,18 @@ namespace OrganTrail
             lblTime.Text = time + ":";
             lblHealth.Text = health;
             lblTraveled.Text = miles + " miles";
+
+            do
+            {
+                miles = +10;
+
+                lblFood.Text = food + " pounds";
+                lblLandmark.Text = landmark + " miles";
+                lblTime.Text = time + ":";
+                lblHealth.Text = health;
+                lblTraveled.Text = miles + " miles";
+            } while (counter > 10);
+
 
 
         }
@@ -55,6 +68,9 @@ namespace OrganTrail
             txtName4.Visible = true;
             btnContinue2.Visible = true;
             txtName1.Focus();
+
+           
+
         }
 
         private void btnContinue2_Click(object sender, EventArgs e)
@@ -73,7 +89,8 @@ namespace OrganTrail
             picCharacter.Visible = true;
             lblEnter.Visible = true;
 
-           
+            //Form shopForm = new Shop();
+            //shopForm.Show();
 
             string leader = txtName.Text;
             string name1 = txtName1.Text;
