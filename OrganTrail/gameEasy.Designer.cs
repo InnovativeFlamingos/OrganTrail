@@ -57,7 +57,14 @@
             this.lbl4 = new System.Windows.Forms.Label();
             this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbOptions = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblRations = new System.Windows.Forms.Label();
+            this.lblHealth2 = new System.Windows.Forms.Label();
+            this.lblPace = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,13 +72,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lblPace = new System.Windows.Forms.Label();
-            this.lblHealth2 = new System.Windows.Forms.Label();
-            this.lblRations = new System.Windows.Forms.Label();
             this.gbEverything.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.gbOptions.SuspendLayout();
@@ -409,11 +409,51 @@
             this.gbOptions.Controls.Add(this.label9);
             this.gbOptions.Controls.Add(this.label2);
             this.gbOptions.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gbOptions.Location = new System.Drawing.Point(42, 30);
+            this.gbOptions.Location = new System.Drawing.Point(25, 12);
             this.gbOptions.Name = "gbOptions";
             this.gbOptions.Size = new System.Drawing.Size(634, 258);
             this.gbOptions.TabIndex = 4;
             this.gbOptions.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(28, 198);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(28, 17);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "4.";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(56, 192);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(148, 17);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Change rations";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(28, 168);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(28, 17);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "3.";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(56, 164);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(118, 17);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Change pace";
             // 
             // panel1
             // 
@@ -428,6 +468,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(578, 87);
             this.panel1.TabIndex = 4;
+            // 
+            // lblRations
+            // 
+            this.lblRations.AutoSize = true;
+            this.lblRations.Location = new System.Drawing.Point(67, 55);
+            this.lblRations.Name = "lblRations";
+            this.lblRations.Size = new System.Drawing.Size(41, 13);
+            this.lblRations.TabIndex = 5;
+            this.lblRations.Text = "label20";
+            // 
+            // lblHealth2
+            // 
+            this.lblHealth2.AutoSize = true;
+            this.lblHealth2.Location = new System.Drawing.Point(53, 32);
+            this.lblHealth2.Name = "lblHealth2";
+            this.lblHealth2.Size = new System.Drawing.Size(41, 13);
+            this.lblHealth2.TabIndex = 4;
+            this.lblHealth2.Text = "label19";
+            // 
+            // lblPace
+            // 
+            this.lblPace.AutoSize = true;
+            this.lblPace.Location = new System.Drawing.Point(39, 8);
+            this.lblPace.Name = "lblPace";
+            this.lblPace.Size = new System.Drawing.Size(41, 13);
+            this.lblPace.TabIndex = 3;
+            this.lblPace.Text = "label18";
             // 
             // label12
             // 
@@ -499,73 +566,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "1.";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(56, 164);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(118, 17);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "Change pace";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(28, 168);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(28, 17);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "3.";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(56, 192);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(148, 17);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Change rations";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(28, 198);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(28, 17);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "4.";
-            // 
-            // lblPace
-            // 
-            this.lblPace.AutoSize = true;
-            this.lblPace.Location = new System.Drawing.Point(39, 8);
-            this.lblPace.Name = "lblPace";
-            this.lblPace.Size = new System.Drawing.Size(41, 13);
-            this.lblPace.TabIndex = 3;
-            this.lblPace.Text = "label18";
-            // 
-            // lblHealth2
-            // 
-            this.lblHealth2.AutoSize = true;
-            this.lblHealth2.Location = new System.Drawing.Point(53, 32);
-            this.lblHealth2.Name = "lblHealth2";
-            this.lblHealth2.Size = new System.Drawing.Size(41, 13);
-            this.lblHealth2.TabIndex = 4;
-            this.lblHealth2.Text = "label19";
-            // 
-            // lblRations
-            // 
-            this.lblRations.AutoSize = true;
-            this.lblRations.Location = new System.Drawing.Point(67, 55);
-            this.lblRations.Name = "lblRations";
-            this.lblRations.Size = new System.Drawing.Size(41, 13);
-            this.lblRations.TabIndex = 5;
-            this.lblRations.Text = "label20";
-            // 
             // gameEasy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -592,6 +592,7 @@
             this.Controls.Add(this.gbEverything);
             this.KeyPreview = true;
             this.Name = "gameEasy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "gameEasy";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyisPress);
             this.gbEverything.ResumeLayout(false);

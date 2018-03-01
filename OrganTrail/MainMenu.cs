@@ -61,8 +61,8 @@ namespace OrganTrail
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hunting hunting = new Hunting();
-            hunting.Show();
+            //Hunting hunting = new Hunting();
+            //hunting.Show();
         }
     }
 }
