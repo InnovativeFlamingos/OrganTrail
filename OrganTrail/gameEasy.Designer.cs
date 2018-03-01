@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gbEverything = new System.Windows.Forms.GroupBox();
+            this.lblDay = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.lblTraveled = new System.Windows.Forms.Label();
             this.lblLandmark = new System.Windows.Forms.Label();
             this.lblFood = new System.Windows.Forms.Label();
@@ -57,6 +59,8 @@
             this.lbl4 = new System.Windows.Forms.Label();
             this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbOptions = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -81,6 +85,8 @@
             // gbEverything
             // 
             this.gbEverything.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbEverything.Controls.Add(this.lblDay);
+            this.gbEverything.Controls.Add(this.label20);
             this.gbEverything.Controls.Add(this.lblTraveled);
             this.gbEverything.Controls.Add(this.lblLandmark);
             this.gbEverything.Controls.Add(this.lblFood);
@@ -99,12 +105,30 @@
             this.gbEverything.TabStop = false;
             this.gbEverything.Visible = false;
             // 
+            // lblDay
+            // 
+            this.lblDay.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.Location = new System.Drawing.Point(509, 13);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(108, 23);
+            this.lblDay.TabIndex = 13;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(437, 16);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 23);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "Day:";
+            // 
             // lblTraveled
             // 
             this.lblTraveled.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTraveled.Location = new System.Drawing.Point(323, 106);
             this.lblTraveled.Name = "lblTraveled";
-            this.lblTraveled.Size = new System.Drawing.Size(108, 23);
+            this.lblTraveled.Size = new System.Drawing.Size(218, 23);
             this.lblTraveled.TabIndex = 11;
             // 
             // lblLandmark
@@ -112,7 +136,7 @@
             this.lblLandmark.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLandmark.Location = new System.Drawing.Point(323, 83);
             this.lblLandmark.Name = "lblLandmark";
-            this.lblLandmark.Size = new System.Drawing.Size(108, 23);
+            this.lblLandmark.Size = new System.Drawing.Size(218, 23);
             this.lblLandmark.TabIndex = 10;
             // 
             // lblFood
@@ -120,7 +144,7 @@
             this.lblFood.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFood.Location = new System.Drawing.Point(323, 60);
             this.lblFood.Name = "lblFood";
-            this.lblFood.Size = new System.Drawing.Size(122, 23);
+            this.lblFood.Size = new System.Drawing.Size(218, 23);
             this.lblFood.TabIndex = 9;
             // 
             // lblHealth
@@ -128,7 +152,7 @@
             this.lblHealth.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHealth.Location = new System.Drawing.Point(323, 35);
             this.lblHealth.Name = "lblHealth";
-            this.lblHealth.Size = new System.Drawing.Size(138, 23);
+            this.lblHealth.Size = new System.Drawing.Size(218, 23);
             this.lblHealth.TabIndex = 8;
             // 
             // lblTime
@@ -136,7 +160,7 @@
             this.lblTime.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.Location = new System.Drawing.Point(323, 12);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(80, 23);
+            this.lblTime.Size = new System.Drawing.Size(108, 23);
             this.lblTime.TabIndex = 7;
             // 
             // label8
@@ -399,6 +423,8 @@
             // 
             // gbOptions
             // 
+            this.gbOptions.Controls.Add(this.label19);
+            this.gbOptions.Controls.Add(this.label18);
             this.gbOptions.Controls.Add(this.label15);
             this.gbOptions.Controls.Add(this.label14);
             this.gbOptions.Controls.Add(this.label17);
@@ -409,17 +435,37 @@
             this.gbOptions.Controls.Add(this.label9);
             this.gbOptions.Controls.Add(this.label2);
             this.gbOptions.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gbOptions.Location = new System.Drawing.Point(25, 12);
+            this.gbOptions.Location = new System.Drawing.Point(29, 10);
             this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(634, 258);
+            this.gbOptions.Size = new System.Drawing.Size(634, 255);
             this.gbOptions.TabIndex = 4;
             this.gbOptions.Visible = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(28, 218);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(28, 17);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "5.";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(59, 217);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(128, 17);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "Buy supplies";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(28, 198);
+            this.label15.Location = new System.Drawing.Point(28, 192);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(28, 17);
             this.label15.TabIndex = 10;
@@ -429,7 +475,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(56, 192);
+            this.label14.Location = new System.Drawing.Point(59, 192);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(148, 17);
             this.label14.TabIndex = 9;
@@ -449,7 +495,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(56, 164);
+            this.label16.Location = new System.Drawing.Point(59, 164);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(118, 17);
             this.label16.TabIndex = 7;
@@ -530,7 +576,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(56, 115);
+            this.label3.Location = new System.Drawing.Point(59, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(258, 17);
             this.label3.TabIndex = 2;
@@ -653,5 +699,9 @@
         private System.Windows.Forms.Label lblRations;
         private System.Windows.Forms.Label lblHealth2;
         private System.Windows.Forms.Label lblPace;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblDay;
+        private System.Windows.Forms.Label label20;
     }
 }

@@ -18,26 +18,59 @@ namespace OrganTrail
 
             int time = 0;
             int food = 0;
+            int day = 0;
             int miles = 0;
-            int landmark = 0;
-            int  ammo = 0;
-            string health = "";
             int counter = 0;
-
-
-
+            int landmark = 0;
+            string health = "";
+            string pace = "";
+            string rations = "";
+        
+            
+            
             //int randomNumber;
             //Random randNumber = new Random();
             //randomNumber = randNumber.Next(1, 3);
 
             lblFood.Text = food + " pounds";
             lblLandmark.Text = landmark + " miles";
-            lblTime.Text = time + ":";
+            lblTime.Text = time.ToString();
             lblHealth.Text = health;
             lblTraveled.Text = miles + " miles";
 
-            
 
+            for (time = 0; time < 24; time++)
+            {
+                miles = miles + 10;
+                time = time + 1;
+
+                lblFood.Text = food + " pounds";
+                lblLandmark.Text = landmark + " miles";
+                lblTime.Text = time + ":00";
+                lblHealth.Text = health;
+                lblTraveled.Text = miles + " miles";
+            }
+
+
+            //if (time < 24)
+            //{
+            //    do
+            //    {
+            //        miles = miles + 10;
+            //        time = time + 1;
+
+            //        lblFood.Text = food + " pounds";
+            //        lblLandmark.Text = landmark + " miles";
+            //        lblTime.Text = time + ":00";
+            //        lblHealth.Text = health;
+            //        lblTraveled.Text = miles + " miles";
+            //    } while (time < 24);
+            //}
+
+
+
+            
+ 
 
         }
 
@@ -97,17 +130,30 @@ namespace OrganTrail
                 lblEnter.Visible = false;
                 gbOptions.Visible = true;
             }
-            else if (e.KeyChar == (char)Keys.D1)
+            else if (e.KeyChar == (char)Keys.D1) // Continues the game
             {
                 gbEverything.Visible = true;
                 picCharacter.Visible = true;
                 lblEnter.Visible = true;
                 gbOptions.Visible = false;
             }
-            else if (e.KeyChar == (char)Keys.D2)
+            else if (e.KeyChar == (char)Keys.D2) // opens map form
             {
                 Form mapForm = new map();
                 mapForm.Show();
+            }
+            else if (e.KeyChar == (char)Keys.D3) // Pace
+            {
+               
+            }
+            else if (e.KeyChar == (char)Keys.D4) // Rations
+            {
+
+            }
+            else if (e.KeyChar == (char)Keys.D5) // Opens Shop
+            {
+                Form shopForm = new Shop();
+                shopForm.Show();
             }
 
         }
