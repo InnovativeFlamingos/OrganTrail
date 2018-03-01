@@ -78,9 +78,7 @@
     <Compile Include="gameMedium.Designer.cs">
       <DependentUpon>gameMedium.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hunting.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Hunting.cs" />
     <Compile Include="Hunting.Designer.cs">
       <DependentUpon>Hunting.cs</DependentUpon>
     </Compile>

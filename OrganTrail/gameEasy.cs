@@ -36,17 +36,7 @@ namespace OrganTrail
             lblHealth.Text = health;
             lblTraveled.Text = miles + " miles";
 
-            do
-            {
-                miles = +10;
-
-                lblFood.Text = food + " pounds";
-                lblLandmark.Text = landmark + " miles";
-                lblTime.Text = time + ":";
-                lblHealth.Text = health;
-                lblTraveled.Text = miles + " miles";
-            } while (counter > 10);
-
+            
 
 
         }
@@ -85,9 +75,7 @@ namespace OrganTrail
             txtName3.Visible = false;
             txtName4.Visible = false;
             btnContinue2.Visible = false;
-            gbEverything.Visible = true;
-            picCharacter.Visible = true;
-            lblEnter.Visible = true;
+            gbOptions.Visible = true;
 
             //Form shopForm = new Shop();
             //shopForm.Show();
