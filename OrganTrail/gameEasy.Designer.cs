@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gbEverything = new System.Windows.Forms.GroupBox();
             this.lblDay = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
-            this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbOptions = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -76,10 +76,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tmrRunGame = new System.Windows.Forms.Timer(this.components);
+            this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbEverything.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.gbOptions.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.SuspendLayout();
             // 
             // gbEverything
@@ -108,7 +110,7 @@
             // lblDay
             // 
             this.lblDay.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.Location = new System.Drawing.Point(509, 13);
+            this.lblDay.Location = new System.Drawing.Point(496, 15);
             this.lblDay.Name = "lblDay";
             this.lblDay.Size = new System.Drawing.Size(108, 23);
             this.lblDay.TabIndex = 13;
@@ -167,11 +169,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(108, 104);
+            this.label8.Location = new System.Drawing.Point(97, 104);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(220, 23);
+            this.label8.Size = new System.Drawing.Size(234, 23);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Miles traveled:";
+            this.label8.Text = "Inches traveled:";
             // 
             // label7
             // 
@@ -410,17 +412,6 @@
             this.lbl4.Text = "4.";
             this.lbl4.Visible = false;
             // 
-            // picCharacter
-            // 
-            this.picCharacter.Image = global::OrganTrail.Properties.Resources.Sub_clone1;
-            this.picCharacter.Location = new System.Drawing.Point(527, 44);
-            this.picCharacter.Name = "picCharacter";
-            this.picCharacter.Size = new System.Drawing.Size(149, 133);
-            this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCharacter.TabIndex = 4;
-            this.picCharacter.TabStop = false;
-            this.picCharacter.Visible = false;
-            // 
             // gbOptions
             // 
             this.gbOptions.Controls.Add(this.label19);
@@ -435,9 +426,9 @@
             this.gbOptions.Controls.Add(this.label9);
             this.gbOptions.Controls.Add(this.label2);
             this.gbOptions.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gbOptions.Location = new System.Drawing.Point(29, 10);
+            this.gbOptions.Location = new System.Drawing.Point(29, 12);
             this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(634, 255);
+            this.gbOptions.Size = new System.Drawing.Size(634, 258);
             this.gbOptions.TabIndex = 4;
             this.gbOptions.Visible = false;
             // 
@@ -612,6 +603,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "1.";
             // 
+            // tmrRunGame
+            // 
+            this.tmrRunGame.Interval = 2000;
+            this.tmrRunGame.Tick += new System.EventHandler(this.tmrRunGame_Tick);
+            // 
+            // picCharacter
+            // 
+            this.picCharacter.Image = global::OrganTrail.Properties.Resources.Sub2;
+            this.picCharacter.Location = new System.Drawing.Point(527, 44);
+            this.picCharacter.Name = "picCharacter";
+            this.picCharacter.Size = new System.Drawing.Size(149, 133);
+            this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCharacter.TabIndex = 4;
+            this.picCharacter.TabStop = false;
+            this.picCharacter.Visible = false;
+            // 
             // gameEasy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -643,11 +650,11 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyisPress);
             this.gbEverything.ResumeLayout(false);
             this.gbEverything.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -703,5 +710,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Timer tmrRunGame;
     }
 }

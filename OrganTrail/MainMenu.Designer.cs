@@ -211,6 +211,7 @@
             this.Controls.Add(this.gboxOptions);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Organ Trail";
             this.gboxOptions.ResumeLayout(false);
             this.gboxOptions.PerformLayout();
