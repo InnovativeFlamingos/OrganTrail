@@ -14,9 +14,9 @@ namespace OrganTrail
     {
         int inches = 0;
         int time = 0;
-        int food = 1000;
+        int food = 12;
         int day = 1;
-        int landmark = 1000;
+        int landmark = 40;
         string health = "";
 
         public gameEasy()
@@ -26,8 +26,7 @@ namespace OrganTrail
             int countDown = 0;
             string pace = "";
             string rations = "";
-      
-            
+
             //int randomNumber;
             //Random randNumber = new Random();
             //randomNumber = randNumber.Next(1, 3);
@@ -37,27 +36,15 @@ namespace OrganTrail
             lblTime.Text = time + ":00";
             lblHealth.Text = health;
             lblTraveled.Text = inches + " inches";
+            lblDay.Text = day + "";
 
-
-
-            //for (time = 0; time <= 24; ++time)
-            //{
-            //    if (time == 24)
-            //    {
-            //        day = day + 1;
-            //    }
-            //    else if (time != 24)
-            //    {
-            //      tmrRunGame.Start();
-            //    }
-            //}
- 
+            
 
         }
 
         private void tmrRunGame_Tick(object sender, EventArgs e)
         {
-            
+            picCharacter.Image = OrganTrail.Properties.Resources.Sub_clone1;
             lblFood.Text = food + " pounds";
             lblLandmark.Text = landmark + " inches";
             lblTime.Text = time + ":00";
@@ -66,13 +53,17 @@ namespace OrganTrail
             lblDay.Text = day + "";
 
             inches = inches + 20;
-            time = time + 2;
+            time = time + 1;
             landmark = landmark - 20;
             food = food - 12;
 
-            picCharacter.Image = OrganTrail.Properties.Resources.Sub_clone1;
+            if (food <= 0)
+            {
+                food = 0;
+            }
 
-            if (time == 24)
+
+            if (time == 25)
             {
                 tmrRunGame.Stop();
                 day = day + 1;
@@ -80,7 +71,7 @@ namespace OrganTrail
                 if (tmrRunGame.Enabled == false)
                 {
                     picCharacter.Image = OrganTrail.Properties.Resources.Sub2;
-
+                    time = time -25;
 
                     lblFood.Text = food + " pounds";
                     lblLandmark.Text = landmark + " inches";
@@ -88,6 +79,11 @@ namespace OrganTrail
                     lblHealth.Text = health;
                     lblTraveled.Text = inches + " inches";
                     lblDay.Text = day + "";
+
+                    if (time < 24)
+                    {
+                        tmrRunGame.Start();
+                    }
                 }
             }
        
