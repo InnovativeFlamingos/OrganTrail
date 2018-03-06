@@ -60,11 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bullet.cs" />
-    <Compile Include="gameEasy.cs">
+    <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gameEasy.Designer.cs">
-      <DependentUpon>gameEasy.cs</DependentUpon>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
     </Compile>
     <Compile Include="Hunting.cs" />
     <Compile Include="Hunting.Designer.cs">
@@ -90,8 +90,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="RandomEvents.cs" />
-    <EmbeddedResource Include="gameEasy.resx">
-      <DependentUpon>gameEasy.cs</DependentUpon>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OrganTrail
 {
-    public partial class gameEasy : Form
+    public partial class Game : Form
     {
         int inches = 0;
         int time = 0;
@@ -19,7 +19,7 @@ namespace OrganTrail
         int landmark = 40;
         string health = "";
 
-        public gameEasy()
+        public Game()
         {
             InitializeComponent();
 
@@ -124,9 +124,6 @@ namespace OrganTrail
             btnContinue2.Visible = false;
             gbOptions.Visible = true;
 
-            //Form shopForm = new Shop();
-            //shopForm.Show();
-
             string leader = txtName.Text;
             string name1 = txtName1.Text;
             string name2 = txtName2.Text;
@@ -171,11 +168,7 @@ namespace OrganTrail
                 {
 
                 }
-                else if (e.KeyChar == (char)Keys.D5) // Opens Shop
-                {
-                    Form shopForm = new Shop();
-                    shopForm.Show();
-                }
+
             }
 
         }
