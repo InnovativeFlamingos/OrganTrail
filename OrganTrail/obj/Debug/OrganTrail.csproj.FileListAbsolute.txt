@@ -55,3 +55,4 @@ C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.Shop.resour
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\bin\Debug\OrganTrail.exe.config
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.exe
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.Game.resources

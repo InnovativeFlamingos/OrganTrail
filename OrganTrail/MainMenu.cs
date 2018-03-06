@@ -33,7 +33,7 @@ namespace OrganTrail
 
                 if (radBanker.Checked == true)
                 {
-                    Form bankerForm = new gameEasy();
+                    Form bankerForm = new Game();
                     bankerForm.Show();
                 }
                 else if (radCarp.Checked == true)

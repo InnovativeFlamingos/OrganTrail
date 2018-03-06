@@ -1,6 +1,6 @@
 ﻿namespace OrganTrail
 {
-    partial class gameEasy
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -59,8 +59,6 @@
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
             this.gbOptions = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -414,8 +412,6 @@
             // 
             // gbOptions
             // 
-            this.gbOptions.Controls.Add(this.label19);
-            this.gbOptions.Controls.Add(this.label18);
             this.gbOptions.Controls.Add(this.label15);
             this.gbOptions.Controls.Add(this.label14);
             this.gbOptions.Controls.Add(this.label17);
@@ -431,26 +427,6 @@
             this.gbOptions.Size = new System.Drawing.Size(634, 258);
             this.gbOptions.TabIndex = 4;
             this.gbOptions.Visible = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(28, 218);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(28, 17);
-            this.label19.TabIndex = 12;
-            this.label19.Text = "5.";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(59, 217);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 17);
-            this.label18.TabIndex = 11;
-            this.label18.Text = "Buy supplies";
             // 
             // label15
             // 
@@ -706,8 +682,6 @@
         private System.Windows.Forms.Label lblRations;
         private System.Windows.Forms.Label lblHealth2;
         private System.Windows.Forms.Label lblPace;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Timer tmrRunGame;
