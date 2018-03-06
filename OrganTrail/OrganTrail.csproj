@@ -59,11 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bullets.cs" />
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hunting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hunting.Designer.cs">
+      <DependentUpon>Hunting.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -87,6 +94,9 @@
     <Compile Include="RandomEvents.cs" />
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hunting.resx">
+      <DependentUpon>Hunting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -143,6 +153,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sub2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hunterBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hunterFront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hunterRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hunterLeft.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
