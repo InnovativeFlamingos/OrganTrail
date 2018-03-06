@@ -66,18 +66,6 @@
     <Compile Include="gameEasy.Designer.cs">
       <DependentUpon>gameEasy.cs</DependentUpon>
     </Compile>
-    <Compile Include="gameHard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="gameHard.Designer.cs">
-      <DependentUpon>gameHard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="gameMedium.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="gameMedium.Designer.cs">
-      <DependentUpon>gameMedium.cs</DependentUpon>
-    </Compile>
     <Compile Include="Hunting.cs" />
     <Compile Include="Hunting.Designer.cs">
       <DependentUpon>Hunting.cs</DependentUpon>
@@ -101,20 +89,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Shop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shop.Designer.cs">
-      <DependentUpon>Shop.cs</DependentUpon>
-    </Compile>
+    <Compile Include="RandomEvents.cs" />
     <EmbeddedResource Include="gameEasy.resx">
       <DependentUpon>gameEasy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="gameHard.resx">
-      <DependentUpon>gameHard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="gameMedium.resx">
-      <DependentUpon>gameMedium.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -126,9 +103,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shop.resx">
-      <DependentUpon>Shop.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
