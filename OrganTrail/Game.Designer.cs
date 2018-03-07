@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.gbEverything = new System.Windows.Forms.GroupBox();
             this.lblDay = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -595,7 +596,7 @@
             this.picCharacter.TabStop = false;
             this.picCharacter.Visible = false;
             // 
-            // gameEasy
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -619,8 +620,9 @@
             this.Controls.Add(this.lblEnter);
             this.Controls.Add(this.lblSpace);
             this.Controls.Add(this.gbEverything);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "gameEasy";
+            this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "gameEasy";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyisPress);

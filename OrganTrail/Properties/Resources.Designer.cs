@@ -63,6 +63,16 @@ namespace OrganTrail.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anatomy_human_body_organ_location_labeled_clipart {
+            get {
+                object obj = ResourceManager.GetObject("anatomy-human-body-organ-location-labeled-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hunterBack {
             get {
                 object obj = ResourceManager.GetObject("hunterBack", resourceCulture);

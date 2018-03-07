@@ -22,30 +22,10 @@ namespace OrganTrail
         {
             if (radTravel.Checked == true)
             {
-                gboxOptions.Visible = false;
-                gboxOptions.Enabled = false;
-                gboxOptions.Left = 4;
-                gboxOptions.Top = 100;
-                gboxDifficulty.Left = 212;
-                gboxDifficulty.Top = 103;
-                gboxDifficulty.Visible = true;
-                gboxDifficulty.Enabled = true;
 
-                if (radBanker.Checked == true)
-                {
-                    Form bankerForm = new Game();
-                    bankerForm.Show();
-                }
-                else if (radCarp.Checked == true)
-                {
-                    Form carpForm = new gameMedium();
-                    carpForm.Show();
-                }
-                else if (radFarmer.Checked == true)
-                {
-                    Form farmerForm = new gameHard();
-                    farmerForm.Show();
-                }
+                Game game = new Game();
+                game.Show();
+
             }
             else if (radLearn.Checked == true)
             {
@@ -59,10 +39,12 @@ namespace OrganTrail
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void radHunting_CheckedChanged(object sender, EventArgs e)
         {
-            //Hunting hunting = new Hunting();
-            //hunting.Show();
+            Hunting hunting = new Hunting();
+            hunting.Show();
+
         }
+
     }
 }
