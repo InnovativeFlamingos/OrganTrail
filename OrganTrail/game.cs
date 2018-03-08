@@ -14,22 +14,23 @@ namespace OrganTrail
     {
         int inches = 0;
         int time = 0;
-        int food = 12;
+        int food = 4200;
         int day = 1;
-        int landmark = 40;
-        string health = "";
+        int landmark = 2000;
+        string health = "Good";
+        int countDown = 16;
+        int randomNumber;
 
         public Game()
         {
             InitializeComponent();
 
-            int countDown = 0;
-            string pace = "";
-            string rations = "";
+            
+            Random randNumber = new Random();
+            randomNumber = randNumber.Next(1, 100);
+            
 
-            //int randomNumber;
-            //Random randNumber = new Random();
-            //randomNumber = randNumber.Next(1, 3);
+            
 
             lblFood.Text = food + " pounds";
             lblLandmark.Text = landmark + " inches";
@@ -37,8 +38,6 @@ namespace OrganTrail
             lblHealth.Text = health;
             lblTraveled.Text = inches + " inches";
             lblDay.Text = day + "";
-
-            
 
         }
 
@@ -62,11 +61,42 @@ namespace OrganTrail
                 food = 0;
             }
 
+            if (landmark == -20)
+            {
+                tmrRunGame.Stop();
+                picCharacter.Image = OrganTrail.Properties.Resources.Sub2;
+                lblEvents.Text = "You reached Landmark";
+                lblEvents.Visible = true;
+                landmark = 2000;
+                lblSpace.Visible = true;
+            }
+
+            if (countDown <= 0)
+            {
+
+            }
+
+            if (food <= 300)
+            {
+                lblHealth.Text = "Bad";
+            }
+            else if (food > 300)
+            {
+                lblHealth.Text = "Good";
+            }
+
+            if (randomNumber == 15)
+            {
+                //++food
+            }
+
 
             if (time == 25)
             {
                 tmrRunGame.Stop();
                 day = day + 1;
+                countDown = countDown - 1;
+                lblDaysLeft.Text = "Days left " + countDown;
 
                 if (tmrRunGame.Enabled == false)
                 {
@@ -86,9 +116,6 @@ namespace OrganTrail
                     }
                 }
             }
-       
-            
-            
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -131,10 +158,9 @@ namespace OrganTrail
             string name4 = txtName4.Text;
         }
 
-    
+
         private void KeyisPress(object sender, KeyPressEventArgs e)
         {
-
             if (e.KeyChar == (char)Keys.Escape) //opens option menu
             {
                 gbEverything.Visible = false;
@@ -143,10 +169,10 @@ namespace OrganTrail
                 gbOptions.Visible = true;
                 tmrRunGame.Stop();
                 picCharacter.Image = OrganTrail.Properties.Resources.Sub2;
-                
             }
-            if (gbOptions.Visible == true)
+            else if (gbOptions.Visible == true)
             {
+                
                 if (e.KeyChar == (char)Keys.D1) // Continues the game
                 {
                     gbEverything.Visible = true;
@@ -154,27 +180,35 @@ namespace OrganTrail
                     lblEnter.Visible = true;
                     gbOptions.Visible = false;
                     tmrRunGame.Start();
+                    lblFacts.Text = " ";
                 }
                 else if (e.KeyChar == (char)Keys.D2) // opens map form
                 {
                     Form mapForm = new map();
                     mapForm.Show();
                 }
-                else if (e.KeyChar == (char)Keys.D3) // Pace
+                else if (e.KeyChar == (char)Keys.D3) // Facts
                 {
-
-                }
-                else if (e.KeyChar == (char)Keys.D4) // Rations
-                {
-
+                    lblFacts.Text = "test";
                 }
 
             }
+            if (lblEvents.Visible == true)
+            {
+                if (e.KeyChar == (char)Keys.Back) // Continues the game
+                {
+                    lblEvents.Visible = false;
+                    tmrRunGame.Start();
+                    lblSpace.Visible = false;
+                }
+            }
 
         }
-
-     
-
-
     }
 }
+
+
+ 
+    
+ 
+

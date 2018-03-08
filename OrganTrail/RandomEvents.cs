@@ -13,13 +13,7 @@ namespace OrganTrail
 
         public void StartEngine()
         {
-            int randNum;
-            Random randNumber = new Random();
-            randNum = randNumber.Next(1, 3);
-
-
-
-
+  
 
         }
     }

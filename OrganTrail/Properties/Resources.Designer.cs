@@ -113,6 +113,16 @@ namespace OrganTrail.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RoboTeller {
+            get {
+                object obj = ResourceManager.GetObject("RoboTeller", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sub_clone {
             get {
                 object obj = ResourceManager.GetObject("Sub clone", resourceCulture);
