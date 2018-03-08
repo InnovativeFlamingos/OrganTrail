@@ -62,3 +62,15 @@ C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.Properties.
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.csproj.GenerateResource.Cache
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\bin\Debug\OrganTrail.exe
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\bin\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.exe.config
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.exe
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.exe
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.pdb
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csprojResolveAssemblyReference.cache
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Game.resources
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Hunting.resources
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.MainMenu.resources
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.map.resources
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Properties.Resources.resources
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csproj.GenerateResource.Cache

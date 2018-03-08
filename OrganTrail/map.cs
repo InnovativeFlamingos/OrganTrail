@@ -17,10 +17,12 @@ namespace OrganTrail
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void KeyIsPress(object sender, KeyPressEventArgs e)
         {
-            this.Close();
-        
+            if (e.KeyChar == (char)Keys.Escape) // Continues the game
+            {
+                this.Close();
+            }
         }
     }
 }
