@@ -134,6 +134,7 @@ namespace OrganTrail
         {
             if (e.KeyChar == (char)Keys.Escape)
             {
+                lblTitle.Visible = false;
                 textBox.Visible = false;
                 lblInfo.Visible = false;
                 timer1.Start();
@@ -151,6 +152,13 @@ namespace OrganTrail
             {
                 // if the player health is below 1
                 //picPlayer.Image = Properties.Resources.dead; // show the player dead image
+                timer1.Stop(); // stop the timer
+                gameOver = true; // change game over to true
+                this.Close();
+            }
+
+            if (score == 6 && submarineHealth != 0)
+            {
                 timer1.Stop(); // stop the timer
                 gameOver = true; // change game over to true
 

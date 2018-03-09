@@ -41,7 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picPlayer = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.textBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -158,14 +158,16 @@
             this.picPlayer.TabIndex = 6;
             this.picPlayer.TabStop = false;
             // 
-            // label4
+            // lblTitle
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(438, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Virus Attack";
+            this.lblTitle.BackColor = System.Drawing.Color.Black;
+            this.lblTitle.Font = new System.Drawing.Font("OCR A Extended", 15F);
+            this.lblTitle.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblTitle.Location = new System.Drawing.Point(370, 105);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(157, 27);
+            this.lblTitle.TabIndex = 14;
+            this.lblTitle.Text = "Virus Attack";
             // 
             // Hunting
             // 
@@ -173,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(923, 667);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.pictureBox3);
@@ -213,6 +215,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox textBox;
         private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
