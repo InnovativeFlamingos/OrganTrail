@@ -20,17 +20,11 @@ namespace OrganTrail
         string health = "Good";
         int countDown = 16;
         int randomNumber;
+        int mechanic = 5;
 
         public Game()
         {
-            InitializeComponent();
-
-            
-            Random randNumber = new Random();
-            randomNumber = randNumber.Next(1, 100);
-            
-
-            
+            InitializeComponent();   
 
             lblFood.Text = food + " pounds";
             lblLandmark.Text = landmark + " inches";
@@ -43,6 +37,8 @@ namespace OrganTrail
 
         private void tmrRunGame_Tick(object sender, EventArgs e)
         {
+          
+
             picCharacter.Image = OrganTrail.Properties.Resources.Sub_clone1;
             lblFood.Text = food + " pounds";
             lblLandmark.Text = landmark + " inches";
@@ -61,6 +57,9 @@ namespace OrganTrail
                 food = 0;
             }
 
+            Random randNumber = new Random();
+            randomNumber = randNumber.Next(1, 100);
+
             if (landmark == -20)
             {
                 tmrRunGame.Stop();
@@ -76,6 +75,12 @@ namespace OrganTrail
 
             }
 
+           
+
+            // good- found food, found sub, find mechanic, 
+            // bad- lose (sick/die) a mechanic, break, virises attack (hunting game?), sick names, wrong vein (lose day), 
+            //Total 8
+
             if (food <= 300)
             {
                 lblHealth.Text = "Bad";
@@ -85,11 +90,82 @@ namespace OrganTrail
                 lblHealth.Text = "Good";
             }
 
-            if (randomNumber == 15)
+            if (randomNumber == 15 || randomNumber == 85)
             {
-                //++food
+                lblEvents.Visible = true;
+                lblEvents.Text = "Wrong Vein. Lose 2 hours.";
+                time = time + 2;
+                food = food - 24;
+                lblSpace.Visible = true;
+                
+            }
+            else if (randomNumber == 69 || randomNumber == 96)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "Find 30 lbs of food.";
+                food = food + 30;
+                lblSpace.Visible = true;
+            }
+            else if (randomNumber == 2 || randomNumber == 99)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "Virus Attack";
+                System.Threading.Thread.Sleep(5000);
+
+                Form huntingForm = new Hunting();
+                huntingForm.Show();
+
+                lblSpace.Visible = true;
+            }
+            else if (randomNumber == 45 || randomNumber == 1)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = txtName1.ToString() +" is sick";
+
+                lblSpace.Visible = true;
+            }
+            else if (randomNumber == 74 || randomNumber == 20)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "You found a mechanic.";
+                ++mechanic;
+
+                lblSpace.Visible = true;
+            }
+            else if (randomNumber == 50 || randomNumber == 10)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "Mechanic is sick.";
+                time = time + 1;
+                food = food - 12;
+
+                lblSpace.Visible = true;
+            }
+            else if (randomNumber == 87 || randomNumber == 12)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "Mechanic dies.";
+                --mechanic;
+                lblSpace.Visible = true;
+            }
+            else if (randomNumber == 3 || randomNumber == 36)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "Found another sub.";
+                food = food + 40;
+                ++mechanic;
+  
+                lblSpace.Visible = true;
+            }
+            
+            if (lblEvents.Visible == true)
+            {
+                tmrRunGame.Stop();
+                picCharacter.Image = OrganTrail.Properties.Resources.Sub2;
+
             }
 
+           
 
             if (time == 25)
             {
@@ -115,6 +191,23 @@ namespace OrganTrail
                         tmrRunGame.Start();
                     }
                 }
+            }
+            if (mechanic <= 0)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "All of your mechanics are dead. You lose.";
+
+                System.Threading.Thread.Sleep(5000);
+                this.Close();
+            }
+
+            if (countDown <= 0)
+            {
+                lblEvents.Visible = true;
+                lblEvents.Text = "You ran out of O2 You lose.";
+
+                System.Threading.Thread.Sleep(5000);
+                this.Close();
             }
         }
 

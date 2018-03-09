@@ -8,8 +8,7 @@ namespace OrganTrail
 {
     class RandomEvents
     {
-        // good- found food, found sub, find somebody?, 
-        // bad- lose (sick) a mechanic, break, virises attack (hunting game?), sick, wrong vein, 
+        
 
         public void StartEngine()
         {
