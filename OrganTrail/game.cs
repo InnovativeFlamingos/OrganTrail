@@ -21,6 +21,7 @@ namespace OrganTrail
         int countDown = 16;
         int randomNumber;
         int mechanic = 5;
+        int randomSick;
 
         public Game()
         {
@@ -106,12 +107,9 @@ namespace OrganTrail
                 food = food + 30;
                 lblSpace.Visible = true;
             }
-            else if (randomNumber == 2 || randomNumber == 99)
+            else if (randomNumber == 77 || randomNumber == 25)
             {
-                lblEvents.Visible = true;
-                lblEvents.Text = "Virus Attack";
-                System.Threading.Thread.Sleep(5000);
-
+                System.Threading.Thread.Sleep(1000);
                 Form huntingForm = new Hunting();
                 huntingForm.Show();
 
@@ -120,7 +118,27 @@ namespace OrganTrail
             else if (randomNumber == 45 || randomNumber == 1)
             {
                 lblEvents.Visible = true;
-                lblEvents.Text = txtName1.ToString() +" is sick";
+                randomSick = randNumber.Next(1, 6);
+                if (randomSick == 1)
+                {
+                    lblEvents.Text = txtName1.Text.ToString() + " is sick";
+                }
+                else if (randomSick == 2)
+                {
+                    lblEvents.Text = txtName2.Text.ToString() + " is sick";
+                }
+                else if (randomSick == 3)
+                {
+                    lblEvents.Text = txtName3.Text.ToString() + " is sick";
+                }
+                else if (randomSick == 4)
+                {
+                    lblEvents.Text = txtName4.Text.ToString() + " is sick";
+                }
+                else if (randomSick == 5)
+                {
+                    lblEvents.Text = txtName.Text.ToString() + " is sick";
+                }
 
                 lblSpace.Visible = true;
             }
@@ -162,7 +180,6 @@ namespace OrganTrail
             {
                 tmrRunGame.Stop();
                 picCharacter.Image = OrganTrail.Properties.Resources.Sub2;
-
             }
 
            
