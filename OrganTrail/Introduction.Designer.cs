@@ -51,7 +51,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 34);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Press 9 to close";
+            this.label2.Text = "Press ESCAPE to close";
             // 
             // Introduction
             // 

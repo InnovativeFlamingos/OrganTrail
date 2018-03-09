@@ -23,11 +23,13 @@ namespace OrganTrail
             if (radTravel.Checked == true)
             {
 
+                Game game = new Game();
+                game.Show();
+
                 Form introForm = new Introduction();
                 introForm.Show();
 
-                Game game = new Game();
-                game.Show();
+               
 
             }
             else if (radLearn.Checked == true)
