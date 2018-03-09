@@ -19,7 +19,7 @@ namespace OrganTrail
 
         private void KeyisPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.D9)
+            if (e.KeyChar == (char)Keys.Escape)
             {
                 this.Close();
             }
