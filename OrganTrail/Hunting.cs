@@ -161,6 +161,7 @@ namespace OrganTrail
             {
                 timer1.Stop(); // stop the timer
                 gameOver = true; // change game over to true
+                this.Close();
 
             }
 
