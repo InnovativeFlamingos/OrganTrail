@@ -23,6 +23,9 @@ namespace OrganTrail
             if (radTravel.Checked == true)
             {
 
+                Form introForm = new Introduction();
+                introForm.Show();
+
                 Game game = new Game();
                 game.Show();
 

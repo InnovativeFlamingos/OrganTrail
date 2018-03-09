@@ -22,6 +22,8 @@ namespace OrganTrail
         int randomNumber;
         int mechanic = 5;
         int randomSick;
+        int randomFact;
+        Random randNumber = new Random();
 
         public Game()
         {
@@ -58,7 +60,7 @@ namespace OrganTrail
                 food = 0;
             }
 
-            Random randNumber = new Random();
+            
             randomNumber = randNumber.Next(1, 100);
 
             if (landmark == -20)
@@ -223,7 +225,7 @@ namespace OrganTrail
                 lblEvents.Visible = true;
                 lblEvents.Text = "You ran out of O2 You lose.";
 
-                System.Threading.Thread.Sleep(5000);
+                System.Threading.Thread.Sleep(3000);
                 this.Close();
             }
         }
@@ -299,7 +301,54 @@ namespace OrganTrail
                 }
                 else if (e.KeyChar == (char)Keys.D3) // Facts
                 {
-                    lblFacts.Text = "test";
+                    randomFact = randNumber.Next(1, 10);
+
+                    if (randomFact == 1)
+                    {
+                        lblFacts.Text = "The only part of the body that has no blood supply is the cornea of the eye. It receives oxygen directly from the air.";
+                    }
+                    else if (randomFact == 2)
+                    {
+                        lblFacts.Text = "he human brain has a memory capacity which is the equivalent of more than four terabytes on a hard drive.";
+                    }
+                     else if (randomFact == 3)
+                    {
+                        lblFacts.Text = "A newborn child can breathe and swallow at the same time for up to seven months.";
+                    }
+                     else if (randomFact == 4)
+                    {
+                        lblFacts.Text = "Your skull is made up of 29 different bones.";
+                    }
+                     else if (randomFact == 5)
+                    {
+                        lblFacts.Text = "Nerve impulses sent from the brain move at a speed of 274 km/h.";
+                    }
+                     else if (randomFact == 6)
+                    {
+                        lblFacts.Text = "A single human brain generates more electrical impulses in a day than all the telephones of the world combined.";
+                    }
+                     else if (randomFact == 7)
+                    {
+                        lblFacts.Text = "The average human body contains enough sulphur to kill all the fleas on the average dog, enough carbon to make 900 pencils, enough potassium to fire a toy cannon, enough fat to make seven bars of soap and enough water to fill a 50-litre barrel.";
+                    }
+                     else if (randomFact == 8)
+                    {
+                        lblFacts.Text = "The human heart pumps 182 million litres of blood during the average lifetime.";
+                    }
+                     else if (randomFact == 9)
+                    {
+                        lblFacts.Text = "50,000 cells in your body died and were replaced by new ones while you were reading this sentence.";
+                    }
+                     else if (randomFact == 10)
+                    {
+                        lblFacts.Text = "The human embryo acquires fingerprints within three months of conception.";
+                    }
+                    
+                }
+                else if (e.KeyChar == (char)Keys.D4) // Facts
+                {
+                    Form introForm = new Introduction();
+                    introForm.Show();
                 }
 
             }
