@@ -117,41 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Sub clone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hunterRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hunterRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sub2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled document (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled document (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hunterLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hunterLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sub clone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SubMove.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hunterBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hunterBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled document (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled document (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anatomy-human-body-organ-location-labeled-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anatomy-human-body-organ-location-labeled-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hunterFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hunterFront.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RoboTeller" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RoboTeller.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Backteriophage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Backteriophage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>The year is 2017.
+Your are the first team of humans to adventure through a human body. 
+Woodie Flowers has volunteered to be the host of this great event, and you have 17 days before the shrinking powder wears off and you will all die.
+
+We have provided you with 
+- 4200 food pills, enough to sustain a team for 17 days.
+- A team of 5 mechanics.
+- A map of the human body.
+- Unlimited food
+- A blue submarine
+
+Don't die.</value>
   </data>
 </root>

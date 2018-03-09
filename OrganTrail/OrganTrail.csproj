@@ -72,6 +72,12 @@
     <Compile Include="Hunting.Designer.cs">
       <DependentUpon>Hunting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Introduction.Designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hunting.resx">
       <DependentUpon>Hunting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introduction.resx">
+      <DependentUpon>Introduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -171,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RoboTeller.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backteriophage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
