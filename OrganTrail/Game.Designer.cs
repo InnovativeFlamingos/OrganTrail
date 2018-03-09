@@ -530,9 +530,9 @@
             this.lblEvents.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEvents.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEvents.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblEvents.Location = new System.Drawing.Point(176, 110);
+            this.lblEvents.Location = new System.Drawing.Point(76, 110);
             this.lblEvents.Name = "lblEvents";
-            this.lblEvents.Size = new System.Drawing.Size(258, 37);
+            this.lblEvents.Size = new System.Drawing.Size(430, 43);
             this.lblEvents.TabIndex = 23;
             this.lblEvents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEvents.Visible = false;
