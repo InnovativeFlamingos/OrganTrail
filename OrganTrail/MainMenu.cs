@@ -33,17 +33,15 @@ namespace OrganTrail
                 map.Show();
 
             }
+            else if (radHunting.Checked == true)
+            {
+                Hunting hunting = new Hunting();
+                hunting.Show();
+            }
             else if (radExit.Checked == true)
             {
                 this.Close();
             }
-        }
-
-        private void radHunting_CheckedChanged(object sender, EventArgs e)
-        {
-            Hunting hunting = new Hunting();
-            hunting.Show();
-
         }
 
     }

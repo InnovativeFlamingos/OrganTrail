@@ -128,7 +128,6 @@
             this.radHunting.TabStop = true;
             this.radHunting.Text = "Shoot A Virus";
             this.radHunting.UseVisualStyleBackColor = true;
-            this.radHunting.CheckedChanged += new System.EventHandler(this.radHunting_CheckedChanged);
             // 
             // pictureBox1
             // 

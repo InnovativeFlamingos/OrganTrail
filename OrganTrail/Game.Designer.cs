@@ -566,7 +566,7 @@
             this.KeyPreview = true;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "gameEasy";
+            this.Text = "Organ Trail";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyisPress);
             this.gbEverything.ResumeLayout(false);
             this.gbEverything.PerformLayout();
