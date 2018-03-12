@@ -36,11 +36,62 @@ namespace OrganTrail
             lblTraveled.Text = inches + " inches";
             lblDay.Text = day + "";
 
+
+
         }
 
         private void tmrRunGame_Tick(object sender, EventArgs e)
         {
 
+            if (inches >= 8000)
+            {
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = false;
+
+                lblSpace.Text = "Press ESCAPE to close";
+                lblSpace.Visible = true;
+                lblEnd.Text = "You Win!";
+                lblEnd.Visible = true;
+
+
+                tmrRunGame.Stop();
+
+            }
+
+            if (countDown <= 0)
+            {
+               
+
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = false;
+
+                lblSpace.Text = "Press ESCAPE to close";
+                lblSpace.Visible = true;
+                lblEnd.Text = "You ran out of O2. You Lose!";
+                lblEnd.Visible = true;
+                tmrRunGame.Stop();
+            }
+
+
+            if (mechanic <= 0)
+            {
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = false;
+
+                lblSpace.Text = "Press ESCAPE to close";
+                lblSpace.Visible = true;
+                lblEnd.Text = "All of your mechanics are dead. You Lose!";
+                lblEnd.Visible = true;
+                tmrRunGame.Stop();
+                
+
+            }
 
             picCharacter.Image = OrganTrail.Properties.Resources.Sub_clone1;
             lblFood.Text = food + " pounds";
@@ -75,54 +126,6 @@ namespace OrganTrail
 
 
 
-            if (mechanic <= 0)
-            {
-                tmrRunGame.Stop();
-                lblEvents.Visible = true;
-                gbEverything.Visible = false;
-                picCharacter.Visible = false;
-                lblEnter.Visible = false;
-                lblSpace.Visible = false;
-                lblEvents.Text = "All of your mechanics are dead. You lose.";
-
-
-                lblEnd.Text = "You Lose!";
-
-                if (lblEnd.Visible == true)
-                {
-                    
-                    this.Close();
-                }
-
-                if (inches == 8000)
-                {
-                    tmrRunGame.Stop();
-                    gbEverything.Visible = false;
-                    picCharacter.Visible = false;
-                    lblEnter.Visible = false;
-                    lblSpace.Visible = false;
-
-                    lblEnd.Text = "You Win!";
-                    if (lblEnd.Visible == true)
-                    {
-                        
-                        this.Close();
-                    }
-
-                }
-
-                if (countDown <= 0)
-                {
-                    tmrRunGame.Stop();
-                    lblEvents.Visible = true;
-                    gbEverything.Visible = false;
-                    picCharacter.Visible = false;
-                    lblEnter.Visible = false;
-                    lblSpace.Visible = false;
-                        
-                        this.Close();
-                    }
-                }
 
             // good- found food, found sub, find mechanic, 
             // bad- lose (sick/die) a mechanic, break, Virus attack (hunting game?), sick names, wrong vein (lose day), 
@@ -151,6 +154,7 @@ namespace OrganTrail
             else if (randomNumber == 69 || randomNumber == 96)
             {
                 lblEvents.Visible = true;
+                picFood.Visible = true;
                 lblEvents.Text = "Find 30 lbs of food.";
                 food = food + 30;
                 lblSpace.Visible = true;
@@ -219,7 +223,7 @@ namespace OrganTrail
             else if (randomNumber == 3 || randomNumber == 36)
             {
                 lblEvents.Visible = true;
-                lblEvents.Text = "Found another sub.";
+                lblEvents.Text = "Found another sub. You got \n - 40 lbs food \n - 1 mechanic";
                 food = food + 40;
                 ++mechanic;
 
@@ -329,7 +333,7 @@ namespace OrganTrail
                     tmrRunGame.Start();
                     lblFacts.Text = " ";
                 }
-                else if (e.KeyChar == (char)Keys.D2) // opens map form
+                else if (e.KeyChar == (char)Keys.D2) // Opens the map form
                 {
                     Form mapForm = new map();
                     mapForm.Show();
@@ -344,7 +348,7 @@ namespace OrganTrail
                     }
                     else if (randomFact == 2)
                     {
-                        lblFacts.Text = "he human brain has a memory capacity which is the equivalent of more than four terabytes on a hard drive.";
+                        lblFacts.Text = "The human brain has a memory capacity which is the equivalent of more than four terabytes on a hard drive.";
                     }
                      else if (randomFact == 3)
                     {
@@ -380,7 +384,7 @@ namespace OrganTrail
                     }
                     
                 }
-                else if (e.KeyChar == (char)Keys.D4) // Facts
+                else if (e.KeyChar == (char)Keys.D4) // Introduction
                 {
                     Form introForm = new Introduction();
                     introForm.Show();
@@ -389,11 +393,20 @@ namespace OrganTrail
             }
             if (lblEvents.Visible == true)
             {
-                if (e.KeyChar == (char)Keys.Back) // Continues the game
+                if (e.KeyChar == (char)Keys.Back) // Continues the game after events
                 {
                     lblEvents.Visible = false;
                     tmrRunGame.Start();
                     lblSpace.Visible = false;
+                    picFood.Visible = false;
+                }
+              
+            }
+            if (lblEnd.Visible == true)
+            {
+                if (e.KeyChar == (char)Keys.Escape) // closes the game after you lose or win
+                {
+                    this.Close();
                 }
             }
 

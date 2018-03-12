@@ -83,6 +83,26 @@ namespace OrganTrail.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fat_cell {
+            get {
+                object obj = ResourceManager.GetObject("fat cell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap finalbloodcell {
+            get {
+                object obj = ResourceManager.GetObject("finalbloodcell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hunterBack {
             get {
                 object obj = ResourceManager.GetObject("hunterBack", resourceCulture);
