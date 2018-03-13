@@ -97,7 +97,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="RandomEvents.cs" />
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
