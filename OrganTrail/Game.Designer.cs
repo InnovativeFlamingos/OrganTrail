@@ -73,12 +73,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tmrRunGame = new System.Windows.Forms.Timer(this.components);
             this.lblEvents = new System.Windows.Forms.Label();
-            this.picCharacter = new System.Windows.Forms.PictureBox();
             this.lblEnd = new System.Windows.Forms.Label();
+            this.picBlood1 = new System.Windows.Forms.PictureBox();
+            this.picFood = new System.Windows.Forms.PictureBox();
+            this.picCharacter = new System.Windows.Forms.PictureBox();
+            this.picBlood2 = new System.Windows.Forms.PictureBox();
+            this.picBlood3 = new System.Windows.Forms.PictureBox();
             this.gbEverything.SuspendLayout();
             this.gbOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood3)).BeginInit();
             this.SuspendLayout();
             // 
             // gbEverything
@@ -420,7 +428,6 @@
             // 
             // gbOptions
             // 
-            this.gbOptions.Controls.Add(this.lblEnd);
             this.gbOptions.Controls.Add(this.label14);
             this.gbOptions.Controls.Add(this.label13);
             this.gbOptions.Controls.Add(this.lblFacts);
@@ -434,7 +441,7 @@
             this.gbOptions.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.gbOptions.Location = new System.Drawing.Point(29, 12);
             this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(634, 276);
+            this.gbOptions.Size = new System.Drawing.Size(643, 299);
             this.gbOptions.TabIndex = 4;
             this.gbOptions.Visible = false;
             // 
@@ -442,7 +449,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(26, 112);
+            this.label14.Location = new System.Drawing.Point(26, 105);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(28, 17);
             this.label14.TabIndex = 9;
@@ -452,7 +459,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(57, 112);
+            this.label13.Location = new System.Drawing.Point(55, 102);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(128, 17);
             this.label13.TabIndex = 8;
@@ -463,7 +470,7 @@
             this.lblFacts.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFacts.Location = new System.Drawing.Point(26, 141);
             this.lblFacts.Name = "lblFacts";
-            this.lblFacts.Size = new System.Drawing.Size(345, 123);
+            this.lblFacts.Size = new System.Drawing.Size(392, 123);
             this.lblFacts.TabIndex = 7;
             this.lblFacts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -490,7 +497,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OrganTrail.Properties.Resources.RoboTeller;
-            this.pictureBox1.Location = new System.Drawing.Point(406, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(424, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 255);
             this.pictureBox1.TabIndex = 4;
@@ -543,36 +550,83 @@
             // 
             // lblEvents
             // 
-            this.lblEvents.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEvents.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEvents.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblEvents.Location = new System.Drawing.Point(76, 110);
+            this.lblEvents.Location = new System.Drawing.Point(91, 93);
             this.lblEvents.Name = "lblEvents";
-            this.lblEvents.Size = new System.Drawing.Size(430, 43);
+            this.lblEvents.Size = new System.Drawing.Size(468, 114);
             this.lblEvents.TabIndex = 23;
             this.lblEvents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEvents.Visible = false;
             // 
+            // lblEnd
+            // 
+            this.lblEnd.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnd.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblEnd.Location = new System.Drawing.Point(147, 118);
+            this.lblEnd.Name = "lblEnd";
+            this.lblEnd.Size = new System.Drawing.Size(359, 75);
+            this.lblEnd.TabIndex = 25;
+            this.lblEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblEnd.Visible = false;
+            // 
+            // picBlood1
+            // 
+            this.picBlood1.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
+            this.picBlood1.Location = new System.Drawing.Point(29, 35);
+            this.picBlood1.Name = "picBlood1";
+            this.picBlood1.Size = new System.Drawing.Size(36, 30);
+            this.picBlood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBlood1.TabIndex = 27;
+            this.picBlood1.TabStop = false;
+            this.picBlood1.Tag = "BloodCell";
+            this.picBlood1.Visible = false;
+            // 
+            // picFood
+            // 
+            this.picFood.Image = global::OrganTrail.Properties.Resources.fat_cell;
+            this.picFood.Location = new System.Drawing.Point(479, 114);
+            this.picFood.Name = "picFood";
+            this.picFood.Size = new System.Drawing.Size(62, 52);
+            this.picFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFood.TabIndex = 26;
+            this.picFood.TabStop = false;
+            this.picFood.Visible = false;
+            // 
             // picCharacter
             // 
             this.picCharacter.Image = global::OrganTrail.Properties.Resources.Sub2;
-            this.picCharacter.Location = new System.Drawing.Point(527, 44);
+            this.picCharacter.Location = new System.Drawing.Point(547, 44);
             this.picCharacter.Name = "picCharacter";
-            this.picCharacter.Size = new System.Drawing.Size(149, 133);
-            this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCharacter.Size = new System.Drawing.Size(139, 127);
+            this.picCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCharacter.TabIndex = 4;
             this.picCharacter.TabStop = false;
             this.picCharacter.Visible = false;
             // 
-            // lblEnd
+            // picBlood2
             // 
-            this.lblEnd.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnd.Location = new System.Drawing.Point(203, 120);
-            this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(202, 75);
-            this.lblEnd.TabIndex = 24;
-            this.lblEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblEnd.Visible = false;
+            this.picBlood2.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
+            this.picBlood2.Location = new System.Drawing.Point(202, 68);
+            this.picBlood2.Name = "picBlood2";
+            this.picBlood2.Size = new System.Drawing.Size(36, 30);
+            this.picBlood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBlood2.TabIndex = 28;
+            this.picBlood2.TabStop = false;
+            this.picBlood2.Tag = "BloodCell";
+            this.picBlood2.Visible = false;
+            // 
+            // picBlood3
+            // 
+            this.picBlood3.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
+            this.picBlood3.Location = new System.Drawing.Point(444, 12);
+            this.picBlood3.Name = "picBlood3";
+            this.picBlood3.Size = new System.Drawing.Size(36, 30);
+            this.picBlood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBlood3.TabIndex = 29;
+            this.picBlood3.TabStop = false;
+            this.picBlood3.Tag = "BloodCell";
+            this.picBlood3.Visible = false;
             // 
             // Game
             // 
@@ -581,6 +635,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(709, 377);
             this.Controls.Add(this.gbOptions);
+            this.Controls.Add(this.picFood);
+            this.Controls.Add(this.picBlood3);
+            this.Controls.Add(this.picBlood2);
+            this.Controls.Add(this.picBlood1);
+            this.Controls.Add(this.lblEnd);
             this.Controls.Add(this.lblEvents);
             this.Controls.Add(this.btnContinue2);
             this.Controls.Add(this.lbl4);
@@ -610,7 +669,11 @@
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -659,9 +722,13 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblFacts;
         private System.Windows.Forms.Label lblDaysLeft;
-        private System.Windows.Forms.Label lblEvents;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblEnd;
+        private System.Windows.Forms.PictureBox picFood;
+        private System.Windows.Forms.PictureBox picBlood1;
+        private System.Windows.Forms.PictureBox picBlood2;
+        private System.Windows.Forms.PictureBox picBlood3;
+        private System.Windows.Forms.Label lblEvents;
     }
 }

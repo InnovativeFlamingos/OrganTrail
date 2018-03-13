@@ -67,7 +67,6 @@ C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.exe
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.pdb
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.exe
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\bin\Debug\OrganTrail.pdb
-C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csprojResolveAssemblyReference.cache
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Game.resources
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Hunting.resources
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.MainMenu.resources

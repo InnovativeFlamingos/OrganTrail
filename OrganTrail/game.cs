@@ -25,6 +25,7 @@ namespace OrganTrail
         int randomFact;
         Random randNumber = new Random();
 
+
         public Game()
         {
             InitializeComponent();   
@@ -36,11 +37,62 @@ namespace OrganTrail
             lblTraveled.Text = inches + " inches";
             lblDay.Text = day + "";
 
+
+
         }
 
         private void tmrRunGame_Tick(object sender, EventArgs e)
         {
 
+            if (inches >= 8000)
+            {
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = false;
+
+                lblSpace.Text = "Press ESCAPE to close";
+                lblSpace.Visible = true;
+                lblEnd.Text = "You Win!";
+                lblEnd.Visible = true;
+
+
+                tmrRunGame.Stop();
+
+            }
+
+            if (countDown <= 0)
+            {
+               
+
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = false;
+
+                lblSpace.Text = "Press ESCAPE to close";
+                lblSpace.Visible = true;
+                lblEnd.Text = "You ran out of O2. You Lose!";
+                lblEnd.Visible = true;
+                tmrRunGame.Stop();
+            }
+
+
+            if (mechanic <= 0)
+            {
+                gbEverything.Visible = false;
+                picCharacter.Visible = false;
+                lblEnter.Visible = false;
+                gbOptions.Visible = false;
+
+                lblSpace.Text = "Press ESCAPE to close";
+                lblSpace.Visible = true;
+                lblEnd.Text = "All of your mechanics are dead. You Lose!";
+                lblEnd.Visible = true;
+                tmrRunGame.Stop();
+                
+
+            }
 
             picCharacter.Image = OrganTrail.Properties.Resources.Sub_clone1;
             lblFood.Text = food + " pounds";
@@ -75,54 +127,6 @@ namespace OrganTrail
 
 
 
-            if (mechanic <= 0)
-            {
-                tmrRunGame.Stop();
-                lblEvents.Visible = true;
-                gbEverything.Visible = false;
-                picCharacter.Visible = false;
-                lblEnter.Visible = false;
-                lblSpace.Visible = false;
-                lblEvents.Text = "All of your mechanics are dead. You lose.";
-
-
-                lblEnd.Text = "You Lose!";
-
-                if (lblEnd.Visible == true)
-                {
-                    
-                    this.Close();
-                }
-
-                if (inches == 8000)
-                {
-                    tmrRunGame.Stop();
-                    gbEverything.Visible = false;
-                    picCharacter.Visible = false;
-                    lblEnter.Visible = false;
-                    lblSpace.Visible = false;
-
-                    lblEnd.Text = "You Win!";
-                    if (lblEnd.Visible == true)
-                    {
-                        
-                        this.Close();
-                    }
-
-                }
-
-                if (countDown <= 0)
-                {
-                    tmrRunGame.Stop();
-                    lblEvents.Visible = true;
-                    gbEverything.Visible = false;
-                    picCharacter.Visible = false;
-                    lblEnter.Visible = false;
-                    lblSpace.Visible = false;
-                        
-                        this.Close();
-                    }
-                }
 
             // good- found food, found sub, find mechanic, 
             // bad- lose (sick/die) a mechanic, break, Virus attack (hunting game?), sick names, wrong vein (lose day), 
@@ -151,6 +155,7 @@ namespace OrganTrail
             else if (randomNumber == 69 || randomNumber == 96)
             {
                 lblEvents.Visible = true;
+                picFood.Visible = true;
                 lblEvents.Text = "Find 30 lbs of food.";
                 food = food + 30;
                 lblSpace.Visible = true;
@@ -219,7 +224,7 @@ namespace OrganTrail
             else if (randomNumber == 3 || randomNumber == 36)
             {
                 lblEvents.Visible = true;
-                lblEvents.Text = "Found another sub.";
+                lblEvents.Text = "Found another sub. You got \n - 40 lbs food \n - 1 mechanic";
                 food = food + 40;
                 ++mechanic;
 
@@ -264,6 +269,7 @@ namespace OrganTrail
         
 
 
+        
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
@@ -329,14 +335,16 @@ namespace OrganTrail
                     tmrRunGame.Start();
                     lblFacts.Text = " ";
                 }
-                else if (e.KeyChar == (char)Keys.D2) // opens map form
+                else if (e.KeyChar == (char)Keys.D2) // Opens the map form
                 {
                     Form mapForm = new map();
                     mapForm.Show();
                 }
+
                 else if (e.KeyChar == (char)Keys.D3) // Facts
                 {
                     randomFact = randNumber.Next(1, 10);
+
 
                     if (randomFact == 1)
                     {
@@ -344,43 +352,44 @@ namespace OrganTrail
                     }
                     else if (randomFact == 2)
                     {
-                        lblFacts.Text = "he human brain has a memory capacity which is the equivalent of more than four terabytes on a hard drive.";
+                        lblFacts.Text = "The human brain has a memory capacity which is the equivalent of more than four terabytes on a hard drive.";
                     }
-                     else if (randomFact == 3)
+                    else if (randomFact == 3)
                     {
                         lblFacts.Text = "A newborn child can breathe and swallow at the same time for up to seven months.";
                     }
-                     else if (randomFact == 4)
+                    else if (randomFact == 4)
                     {
                         lblFacts.Text = "Your skull is made up of 29 different bones.";
                     }
-                     else if (randomFact == 5)
+                    else if (randomFact == 5)
                     {
                         lblFacts.Text = "Nerve impulses sent from the brain move at a speed of 274 km/h.";
                     }
-                     else if (randomFact == 6)
+                    else if (randomFact == 6)
                     {
                         lblFacts.Text = "A single human brain generates more electrical impulses in a day than all the telephones of the world combined.";
                     }
-                     else if (randomFact == 7)
+                    else if (randomFact == 7)
                     {
                         lblFacts.Text = "The average human body contains enough sulphur to kill all the fleas on the average dog, enough carbon to make 900 pencils, enough potassium to fire a toy cannon, enough fat to make seven bars of soap and enough water to fill a 50-litre barrel.";
                     }
-                     else if (randomFact == 8)
+                    else if (randomFact == 8)
                     {
                         lblFacts.Text = "The human heart pumps 182 million litres of blood during the average lifetime.";
                     }
-                     else if (randomFact == 9)
+                    else if (randomFact == 9)
                     {
                         lblFacts.Text = "50,000 cells in your body died and were replaced by new ones while you were reading this sentence.";
                     }
-                     else if (randomFact == 10)
+                    else if (randomFact == 10)
                     {
                         lblFacts.Text = "The human embryo acquires fingerprints within three months of conception.";
                     }
-                    
+
+                   
                 }
-                else if (e.KeyChar == (char)Keys.D4) // Facts
+                else if (e.KeyChar == (char)Keys.D4) // Introduction
                 {
                     Form introForm = new Introduction();
                     introForm.Show();
@@ -389,11 +398,20 @@ namespace OrganTrail
             }
             if (lblEvents.Visible == true)
             {
-                if (e.KeyChar == (char)Keys.Back) // Continues the game
+                if (e.KeyChar == (char)Keys.Back) // Continues the game after events
                 {
                     lblEvents.Visible = false;
                     tmrRunGame.Start();
                     lblSpace.Visible = false;
+                    picFood.Visible = false;
+                }
+              
+            }
+            if (lblEnd.Visible == true)
+            {
+                if (e.KeyChar == (char)Keys.Escape) // closes the game after you lose or win
+                {
+                    this.Close();
                 }
             }
 

@@ -97,7 +97,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="RandomEvents.cs" />
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +182,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Backteriophage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fat cell.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalbloodcell.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
