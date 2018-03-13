@@ -21,5 +21,6 @@
     -- Viruses move to attack you and hitting them will hurt the health bar
     
 ### Flowchart
+![Flow Chart](OrganTrail.jpg "FlowChart")
 
 ### Video
