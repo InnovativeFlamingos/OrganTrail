@@ -31,7 +31,7 @@ namespace OrganTrail
 
         string bulletGuide = "up"; // This string is called bulletGuide and it will be used to guide the bullets
         double submarineHealth = 100; //This double variable is called player health
-        int speed = 5; // This integer is for the speed of the player
+        int speed = 6; // This integer is for the speed of the player
         int ammo = 1500; // This integer will hold the number of ammo the player has start of the game
         int enemiesSpeed = 3; // This integer will the speed which the zombies move in the game
         int score = 0; // This integer will hold the score the player achieved through the game
@@ -140,6 +140,13 @@ namespace OrganTrail
                 timer1.Start();
 
             }
+            if (lblLeave.Visible == true || lblLose.Visible == true || lblWin.Visible == true)
+            {
+                if (e.KeyChar == (char)Keys.Escape)
+                {
+                    this.Close();
+                }
+            }
         }
 
         private void gameEngine(object sender, EventArgs e)
@@ -154,22 +161,27 @@ namespace OrganTrail
                 //picPlayer.Image = Properties.Resources.dead; // show the player dead image
                 timer1.Stop(); // stop the timer
                 gameOver = true; // change game over to true
-                this.Close();
+                textBox.Visible = true; //
+                lblLose.Visible = true; //
+                lblLeave.Visible = true; //
+                picPlayer.Visible = false;
             }
 
             if (score == 6 && submarineHealth != 0)
             {
                 timer1.Stop(); // stop the timer
                 gameOver = true; // change game over to true
-                this.Close();
-
+                textBox.Visible = true;
+                lblWin.Visible = true;
+                lblLeave.Visible = true;
+                picPlayer.Visible = false;
             }
 
             label1.Text = "   Ammo:   " + ammo; // show the ammo amount on label 1
             label2.Text = "Kills: " + score; // show the total kills on the score
 
             // if the player health is less then 50
-            if (submarineHealth < 50)
+            if (progressBar1.Value < 50)
             {
                 progressBar1.ForeColor = System.Drawing.Color.Yellow; // change the progress bar colour to red.
             }
@@ -282,6 +294,7 @@ namespace OrganTrail
                     {
                         ((PictureBox)x).Top += enemiesSpeed; // move virus towards the left of the submarine/player
                     }
+
                 }
                 // below is the second for loop, this is nexted inside the first one
                 // the bullet and virus needs to be different than each other
@@ -321,8 +334,29 @@ namespace OrganTrail
 
             Bullets shoot = new Bullets(); // create a new instance of the bullet class
             shoot.direction = direct; // assignment the dirction to the bullet
-            shoot.bulletLeft = picPlayer.Left + (picPlayer.Width = 175); // place the bullet to left half of the player
-            shoot.bulletTop = picPlayer.Top + (picPlayer.Height = 100); // place the bullet on top half of the player
+            /*
+            if (bulletGuide == "down") 
+            {
+                shoot.bulletLeft = picPlayer.Left + (picPlayer.Width = 29); // place the bullet to left half of the player
+                shoot.bulletTop = picPlayer.Top + (picPlayer.Height =  -1); // place the bullet on top half of the player
+            }
+            if (bulletGuide == "up")
+            {
+                shoot.bulletLeft = picPlayer.Left + (picPlayer.Width = 200); // place the bullet to left half of the player
+                shoot.bulletTop = picPlayer.Top + (picPlayer.Height = 200); // place the bullet on top half of the player
+            }
+            if (bulletGuide == "right")
+            {
+                shoot.bulletLeft = picPlayer.Left + (picPlayer.Width = 170); // place the bullet to left half of the player
+                shoot.bulletTop = picPlayer.Top + (picPlayer.Height = 93); // place the bullet on top half of the player
+            }
+            if (bulletGuide == "left")
+            {
+                shoot.bulletLeft = picPlayer.Left + (picPlayer.Width = 10); // place the bullet to left half of the player
+                shoot.bulletTop = picPlayer.Top + (picPlayer.Height = 93); // place the bullet on top half of the player
+            }*/
+            shoot.bulletLeft = picPlayer.Left + (picPlayer.Width / 2); // place the bullet to left half of the player
+            shoot.bulletTop = picPlayer.Top + (picPlayer.Height / 2); // place the bullet on top half of the player
             shoot.makeBullet(this); // run the function mkBullet from the bullet class.
         }
 
@@ -342,35 +376,3 @@ namespace OrganTrail
         }
     }
 }
-
-
-
-
-
-/*private void makezombies()
-{
-    // when this function is called it will make zombie in the game
-
-    PictureBox zombie = new PictureBox(); // create a new picture box called zombie
-    zombie.Tag = "zombie"; // add a tag to it called zombie
-    zombie.Image = Properties.Resources.zdown; // the default picture for the zombie is zbown
-    zombie.Left = rnd.Next(0, 900); // generate a number between 0 and 900 and assignment that to the new zombie left
-    zombie.Top = rnd.Next(0, 800); // generate a number between 0 and 800 and assignment that to the new zombie top
-    zombie.SizeMode = PictureBoxSizeMode.AutoSize; // set auto size for the new picture box
-    this.Controls.Add(zombie); // add the picture box to the screen
-    picPlayer.BringToFront(); // bring the player to the front
-}
-        
-private void makezombies()
-{
-    // when this function is called it will make zombie in the game
-
-    PictureBox zombie = new PictureBox(); // create a new picture box called zombie
-    zombie.Tag = "zombie"; // add a tag to it called zombie
-    zombie.Image = Properties.Resources.zdown; // the default picture for the zombie is zbown
-    zombie.Left = rnd.Next(0, 900); // generate a number between 0 and 900 and assignment that to the new zombie left
-    zombie.Top = rnd.Next(0, 800); // generate a number between 0 and 800 and assignment that to the new zombie top
-    zombie.SizeMode = PictureBoxSizeMode.AutoSize; // set auto size for the new picture box
-    this.Controls.Add(zombie); // add the picture box to the screen
-    picPlayer.BringToFront(); // bring the player to the front
-}*/
