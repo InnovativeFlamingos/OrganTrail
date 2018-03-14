@@ -124,6 +124,9 @@
   <data name="hunterBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hunterBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="finalbloodcell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalbloodcell.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Backteriophage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backteriophage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,7 +160,7 @@
   <data name="Sub2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="finalbloodcell" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finalbloodcell.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\block1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

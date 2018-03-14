@@ -66,7 +66,6 @@
             this.lblFacts = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -74,19 +73,22 @@
             this.tmrRunGame = new System.Windows.Forms.Timer(this.components);
             this.lblEvents = new System.Windows.Forms.Label();
             this.lblEnd = new System.Windows.Forms.Label();
-            this.picBlood1 = new System.Windows.Forms.PictureBox();
+            this.picbackground = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picFood = new System.Windows.Forms.PictureBox();
-            this.picCharacter = new System.Windows.Forms.PictureBox();
-            this.picBlood2 = new System.Windows.Forms.PictureBox();
             this.picBlood3 = new System.Windows.Forms.PictureBox();
+            this.picBlood2 = new System.Windows.Forms.PictureBox();
+            this.picBlood1 = new System.Windows.Forms.PictureBox();
+            this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbEverything.SuspendLayout();
             this.gbOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBlood1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFood)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlood3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.SuspendLayout();
             // 
             // gbEverything
@@ -494,15 +496,6 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "Facts";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OrganTrail.Properties.Resources.RoboTeller;
-            this.pictureBox1.Location = new System.Drawing.Point(424, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 255);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -570,6 +563,61 @@
             this.lblEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEnd.Visible = false;
             // 
+            // picbackground
+            // 
+            this.picbackground.Image = global::OrganTrail.Properties.Resources.block;
+            this.picbackground.Location = new System.Drawing.Point(3, 148);
+            this.picbackground.Name = "picbackground";
+            this.picbackground.Size = new System.Drawing.Size(703, 32);
+            this.picbackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picbackground.TabIndex = 30;
+            this.picbackground.TabStop = false;
+            this.picbackground.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OrganTrail.Properties.Resources.RoboTeller;
+            this.pictureBox1.Location = new System.Drawing.Point(424, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 255);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picFood
+            // 
+            this.picFood.Image = global::OrganTrail.Properties.Resources.fat_cell;
+            this.picFood.Location = new System.Drawing.Point(497, 98);
+            this.picFood.Name = "picFood";
+            this.picFood.Size = new System.Drawing.Size(62, 52);
+            this.picFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFood.TabIndex = 26;
+            this.picFood.TabStop = false;
+            this.picFood.Visible = false;
+            // 
+            // picBlood3
+            // 
+            this.picBlood3.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
+            this.picBlood3.Location = new System.Drawing.Point(444, 12);
+            this.picBlood3.Name = "picBlood3";
+            this.picBlood3.Size = new System.Drawing.Size(36, 30);
+            this.picBlood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBlood3.TabIndex = 29;
+            this.picBlood3.TabStop = false;
+            this.picBlood3.Tag = "bloodCell";
+            this.picBlood3.Visible = false;
+            // 
+            // picBlood2
+            // 
+            this.picBlood2.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
+            this.picBlood2.Location = new System.Drawing.Point(202, 68);
+            this.picBlood2.Name = "picBlood2";
+            this.picBlood2.Size = new System.Drawing.Size(36, 30);
+            this.picBlood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBlood2.TabIndex = 28;
+            this.picBlood2.TabStop = false;
+            this.picBlood2.Tag = "bloodCell";
+            this.picBlood2.Visible = false;
+            // 
             // picBlood1
             // 
             this.picBlood1.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
@@ -579,19 +627,8 @@
             this.picBlood1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBlood1.TabIndex = 27;
             this.picBlood1.TabStop = false;
-            this.picBlood1.Tag = "BloodCell";
+            this.picBlood1.Tag = "bloodCell";
             this.picBlood1.Visible = false;
-            // 
-            // picFood
-            // 
-            this.picFood.Image = global::OrganTrail.Properties.Resources.fat_cell;
-            this.picFood.Location = new System.Drawing.Point(479, 114);
-            this.picFood.Name = "picFood";
-            this.picFood.Size = new System.Drawing.Size(62, 52);
-            this.picFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picFood.TabIndex = 26;
-            this.picFood.TabStop = false;
-            this.picFood.Visible = false;
             // 
             // picCharacter
             // 
@@ -603,30 +640,6 @@
             this.picCharacter.TabIndex = 4;
             this.picCharacter.TabStop = false;
             this.picCharacter.Visible = false;
-            // 
-            // picBlood2
-            // 
-            this.picBlood2.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
-            this.picBlood2.Location = new System.Drawing.Point(202, 68);
-            this.picBlood2.Name = "picBlood2";
-            this.picBlood2.Size = new System.Drawing.Size(36, 30);
-            this.picBlood2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBlood2.TabIndex = 28;
-            this.picBlood2.TabStop = false;
-            this.picBlood2.Tag = "BloodCell";
-            this.picBlood2.Visible = false;
-            // 
-            // picBlood3
-            // 
-            this.picBlood3.Image = global::OrganTrail.Properties.Resources.finalbloodcell;
-            this.picBlood3.Location = new System.Drawing.Point(444, 12);
-            this.picBlood3.Name = "picBlood3";
-            this.picBlood3.Size = new System.Drawing.Size(36, 30);
-            this.picBlood3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBlood3.TabIndex = 29;
-            this.picBlood3.TabStop = false;
-            this.picBlood3.Tag = "BloodCell";
-            this.picBlood3.Visible = false;
             // 
             // Game
             // 
@@ -654,10 +667,11 @@
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblNameLeader);
-            this.Controls.Add(this.picCharacter);
             this.Controls.Add(this.lblEnter);
             this.Controls.Add(this.lblSpace);
             this.Controls.Add(this.gbEverything);
+            this.Controls.Add(this.picbackground);
+            this.Controls.Add(this.picCharacter);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Game";
@@ -668,12 +682,13 @@
             this.gbEverything.PerformLayout();
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBlood1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFood)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlood3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlood1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,5 +745,6 @@
         private System.Windows.Forms.PictureBox picBlood2;
         private System.Windows.Forms.PictureBox picBlood3;
         private System.Windows.Forms.Label lblEvents;
+        private System.Windows.Forms.PictureBox picbackground;
     }
 }
