@@ -23,6 +23,7 @@ namespace OrganTrail
         int mechanic = 5;
         int randomSick;
         int randomFact;
+        int randomBloodcell;
         Random randNumber = new Random();
 
 
@@ -112,6 +113,20 @@ namespace OrganTrail
                 food = 0;
             }
 
+            randomBloodcell = randNumber.Next(1, 10);
+
+            if (randomBloodcell == 2 || randomBloodcell == 4 || randomBloodcell == 10)
+            {
+                picBlood1.Visible = true;
+                picBlood2.Visible = true;
+                picBlood3.Visible = true;
+            }
+            else if (randomBloodcell != 2 || randomBloodcell != 4 || randomBloodcell != 10)
+            {
+                picBlood1.Visible = false;
+                picBlood2.Visible = false;
+                picBlood3.Visible = false;
+            }
 
             randomNumber = randNumber.Next(1, 100);
 
@@ -154,8 +169,8 @@ namespace OrganTrail
             }
             else if (randomNumber == 69 || randomNumber == 96)
             {
-                lblEvents.Visible = true;
                 picFood.Visible = true;
+                lblEvents.Visible = true;
                 lblEvents.Text = "Find 30 lbs of food.";
                 food = food + 30;
                 lblSpace.Visible = true;
@@ -319,6 +334,7 @@ namespace OrganTrail
                 gbEverything.Visible = false;
                 picCharacter.Visible = false;
                 lblEnter.Visible = false;
+                picbackground.Visible = false;
                 gbOptions.Visible = true;
                 tmrRunGame.Stop();
                 picCharacter.Image = OrganTrail.Properties.Resources.Sub2;
@@ -331,6 +347,7 @@ namespace OrganTrail
                     gbEverything.Visible = true;
                     picCharacter.Visible = true;
                     lblEnter.Visible = true;
+                    picbackground.Visible = true;
                     gbOptions.Visible = false;
                     tmrRunGame.Start();
                     lblFacts.Text = " ";

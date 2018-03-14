@@ -140,12 +140,27 @@ namespace OrganTrail
                 timer1.Start();
 
             }
-            if (lblLeave.Visible == true || lblLose.Visible == true || lblWin.Visible == true)
+            if (lblLeave.Visible == true)
             {
-                if (e.KeyChar == (char)Keys.Escape)
+                if(lblWin.Visible == true)
+                    {
+                     if (e.KeyChar == (char)Keys.Escape)
+                        {
+                        this.Close();
+                         }
+                    }
+
+                else if (lblLose.Visible == true)
                 {
-                    this.Close();
+                    if (e.KeyChar == (char)Keys.Escape)
+                    {
+                        this.Close();
+                        Form gameForm = new Game();
+                        gameForm.Close();
+                    }
+
                 }
+               
             }
         }
 

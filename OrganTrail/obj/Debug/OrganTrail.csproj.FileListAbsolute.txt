@@ -75,3 +75,4 @@ C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Propertie
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csproj.GenerateResource.Cache
 C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.Introduction.resources
 C:\Users\jp134125\Desktop\OrganTrail\OrganTrail\obj\Debug\OrganTrail.Introduction.resources
+C:\Users\am312792\Desktop\OrganTrail-1\OrganTrail\obj\Debug\OrganTrail.csprojResolveAssemblyReference.cache
