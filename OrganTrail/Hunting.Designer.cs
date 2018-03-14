@@ -42,6 +42,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picPlayer = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.lblWin = new System.Windows.Forms.Label();
+            this.lblLose = new System.Windows.Forms.Label();
+            this.lblLeave = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.textBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,10 +87,12 @@
             // 
             // progressBar1
             // 
+            this.progressBar1.ForeColor = System.Drawing.Color.Red;
             this.progressBar1.Location = new System.Drawing.Point(679, 20);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(178, 23);
             this.progressBar1.TabIndex = 3;
+            this.progressBar1.Value = 100;
             // 
             // timer1
             // 
@@ -100,7 +105,7 @@
             this.lblInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblInfo.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
             this.lblInfo.ForeColor = System.Drawing.Color.White;
-            this.lblInfo.Location = new System.Drawing.Point(199, 172);
+            this.lblInfo.Location = new System.Drawing.Point(226, 163);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(494, 303);
             this.lblInfo.TabIndex = 13;
@@ -150,11 +155,12 @@
             // 
             // picPlayer
             // 
+            this.picPlayer.BackColor = System.Drawing.Color.Transparent;
             this.picPlayer.Image = global::OrganTrail.Properties.Resources.hunterRight;
-            this.picPlayer.Location = new System.Drawing.Point(389, 213);
+            this.picPlayer.Location = new System.Drawing.Point(437, 289);
             this.picPlayer.Name = "picPlayer";
-            this.picPlayer.Size = new System.Drawing.Size(156, 236);
-            this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picPlayer.Size = new System.Drawing.Size(108, 160);
+            this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPlayer.TabIndex = 6;
             this.picPlayer.TabStop = false;
             // 
@@ -169,12 +175,54 @@
             this.lblTitle.TabIndex = 14;
             this.lblTitle.Text = "Virus Attack";
             // 
-            // Hunting
+            // lblWin
+            // 
+            this.lblWin.AutoSize = true;
+            this.lblWin.BackColor = System.Drawing.Color.Black;
+            this.lblWin.Font = new System.Drawing.Font("OCR A Extended", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWin.ForeColor = System.Drawing.Color.Yellow;
+            this.lblWin.Location = new System.Drawing.Point(246, 239);
+            this.lblWin.Name = "lblWin";
+            this.lblWin.Size = new System.Drawing.Size(448, 99);
+            this.lblWin.TabIndex = 15;
+            this.lblWin.Text = "You Win";
+            this.lblWin.Visible = false;
+            // 
+            // lblLose
+            // 
+            this.lblLose.AutoSize = true;
+            this.lblLose.BackColor = System.Drawing.Color.Black;
+            this.lblLose.Font = new System.Drawing.Font("OCR A Extended", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLose.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblLose.Location = new System.Drawing.Point(214, 239);
+            this.lblLose.Name = "lblLose";
+            this.lblLose.Size = new System.Drawing.Size(506, 99);
+            this.lblLose.TabIndex = 16;
+            this.lblLose.Text = "You Lose";
+            this.lblLose.Visible = false;
+            // 
+            // lblLeave
+            // 
+            this.lblLeave.AutoSize = true;
+            this.lblLeave.BackColor = System.Drawing.Color.Black;
+            this.lblLeave.Font = new System.Drawing.Font("OCR A Extended", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLeave.ForeColor = System.Drawing.Color.Green;
+            this.lblLeave.Location = new System.Drawing.Point(183, 414);
+            this.lblLeave.Name = "lblLeave";
+            this.lblLeave.Size = new System.Drawing.Size(566, 35);
+            this.lblLeave.TabIndex = 17;
+            this.lblLeave.Text = "Press Escape to exit the game";
+            this.lblLeave.Visible = false;
+            // 
+            // HuntingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(923, 667);
+            this.Controls.Add(this.lblLeave);
+            this.Controls.Add(this.lblLose);
+            this.Controls.Add(this.lblWin);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.textBox);
@@ -216,5 +264,8 @@
         private System.Windows.Forms.PictureBox textBox;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblWin;
+        private System.Windows.Forms.Label lblLose;
+        private System.Windows.Forms.Label lblLeave;
     }
 }
