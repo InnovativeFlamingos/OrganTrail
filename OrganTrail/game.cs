@@ -360,7 +360,7 @@ namespace OrganTrail
 
                 else if (e.KeyChar == (char)Keys.D3) // Facts
                 {
-                    randomFact = randNumber.Next(1, 10);
+                    randomFact = randNumber.Next(1, 25);
 
 
                     if (randomFact == 1)
@@ -403,7 +403,66 @@ namespace OrganTrail
                     {
                         lblFacts.Text = "The human embryo acquires fingerprints within three months of conception.";
                     }
-
+                    else if (randomFact == 11)
+                    {
+                        lblFacts.Text = "Women’s hearts beat faster than men’s.";
+                    }
+                    else if (randomFact == 12)
+                    {
+                        lblFacts.Text = "A man named Charles Osborne hiccupped for a total of 68 years.";
+                    }
+                    else if (randomFact == 13)
+                    {
+                        lblFacts.Text = "Right-handed people live, on average, nine years longer than left-handed people.";
+                    }
+                    else if (randomFact == 14)
+                    {
+                        lblFacts.Text = "About two thirds of people tilt their head to the right when kissing.";
+                    }
+                    else if (randomFact == 15)
+                    {
+                        lblFacts.Text = "The average person forgets 90% of their dreams.";
+                    }
+                    else if (randomFact == 16)
+                    {
+                        lblFacts.Text = "The total length of all the blood vessels in the human body is about 100,000 km.";
+                    }
+                    else if (randomFact == 17)
+                    {
+                        lblFacts.Text = "On average, a person’s respiration rate is one third higher in spring than in autumn.";
+                    }
+                    else if (randomFact == 18)
+                    {
+                        lblFacts.Text = "By the end of a person’s life, they can recall, on average, around 150 trillion pieces of information.";
+                    }
+                    else if (randomFact == 19)
+                    {
+                        lblFacts.Text = "We lose 80% of our body heat from the head.";
+                    }
+                    else if (randomFact == 20)
+                    {
+                        lblFacts.Text = "When you blush, your stomach also turns red.";
+                    }
+                    else if (randomFact == 21)
+                    {
+                        lblFacts.Text = "A feeling of thirst occurs when water loss is equal to 1% of your body weight. The loss of more than 5% can cause fainting, and more than 10% causes death from dehydration.";
+                    }
+                    else if (randomFact == 22)
+                    {
+                        lblFacts.Text = "At least 700 enzymes are active in the human body.";
+                    }
+                    else if (randomFact == 23)
+                    {
+                        lblFacts.Text = "Human beings are the only living things which sleep on their backs.";
+                    }
+                    else if (randomFact == 24)
+                    {
+                        lblFacts.Text = "The average four-year-old child asks 450 questions a day.";
+                    }
+                    else if (randomFact == 25)
+                    {
+                        lblFacts.Text = "Not only human beings, but also koalas have unique finger prints.";
+                    }
                    
                 }
                 else if (e.KeyChar == (char)Keys.D4) // Introduction
