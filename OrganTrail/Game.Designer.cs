@@ -66,6 +66,7 @@
             this.lblFacts = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -74,7 +75,6 @@
             this.lblEvents = new System.Windows.Forms.Label();
             this.lblEnd = new System.Windows.Forms.Label();
             this.picbackground = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picFood = new System.Windows.Forms.PictureBox();
             this.picBlood3 = new System.Windows.Forms.PictureBox();
             this.picBlood2 = new System.Windows.Forms.PictureBox();
@@ -82,8 +82,8 @@
             this.picCharacter = new System.Windows.Forms.PictureBox();
             this.gbEverything.SuspendLayout();
             this.gbOptions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlood3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).BeginInit();
@@ -472,7 +472,7 @@
             this.lblFacts.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFacts.Location = new System.Drawing.Point(26, 141);
             this.lblFacts.Name = "lblFacts";
-            this.lblFacts.Size = new System.Drawing.Size(392, 123);
+            this.lblFacts.Size = new System.Drawing.Size(425, 123);
             this.lblFacts.TabIndex = 7;
             this.lblFacts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -495,6 +495,15 @@
             this.label11.Size = new System.Drawing.Size(58, 17);
             this.label11.TabIndex = 5;
             this.label11.Text = "Facts";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OrganTrail.Properties.Resources.RoboTeller;
+            this.pictureBox1.Location = new System.Drawing.Point(457, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 255);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -573,15 +582,6 @@
             this.picbackground.TabIndex = 30;
             this.picbackground.TabStop = false;
             this.picbackground.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OrganTrail.Properties.Resources.RoboTeller;
-            this.pictureBox1.Location = new System.Drawing.Point(424, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 255);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // picFood
             // 
@@ -682,8 +682,8 @@
             this.gbEverything.PerformLayout();
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlood3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlood2)).EndInit();
